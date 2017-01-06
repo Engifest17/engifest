@@ -2,7 +2,7 @@
 /*************Sidebar***************/
 #sidebar-container{
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: 505;
 }
@@ -104,12 +104,10 @@ a:active { text-decoration: none; }
   position: fixed;
   float: left;
   width: 280px;
-  top: 0;
+  top: 55%;
   right: 0;
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0.825);
   color: #aaabae;
-  font-family: "Segoe UI";
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 

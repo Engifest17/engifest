@@ -31,14 +31,19 @@ body {
 
 #Menu {
 	position: absolute;
+	width: 100%;
 	display: block;
 	font-size: 30px;
 	color: #ffffff;
 	font-family: "Quarca";
 	text-shadow: 0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F;
 	cursor: hand;
-	top: 0%;
-	left: 10%;
+	bottom: 0%;
+	left: 0%;
+}
+
+.align-center {
+	text-align: center;
 }
 
 #controlDiv {

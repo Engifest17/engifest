@@ -16,19 +16,19 @@ function showText(cameraPosition) {
   var textDiv = document.getElementById('textDiv');
   if(cameraPosition.x <= (sun.planet.position.x + mercury.planet.position.x)/2) {
     // console.log("sun");
-    textDiv.innerHTML = "S&nbsp;&nbsp;U&nbsp;&nbsp;N";
+    textDiv.innerHTML = "H&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;E";
   } else if( cameraPosition.x <= (mercury.planet.position.x + venus.planet.position.x)/2) {
     // console.log("mercury");
-    textDiv.innerHTML = "M&nbsp;&nbsp;E&nbsp;&nbsp;R&nbsp;&nbsp;C&nbsp;&nbsp;U&nbsp;&nbsp;R&nbsp;&nbsp;Y";
+    textDiv.innerHTML = "E&nbsp;&nbsp;V&nbsp;&nbsp;E&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;S";
   } else if( cameraPosition.x <= (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("venus");
-    textDiv.innerHTML = "V&nbsp;&nbsp;E&nbsp;&nbsp;N&nbsp;&nbsp;U&nbsp;&nbsp;S";
+    textDiv.innerHTML = "S&nbsp;&nbsp;P&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp;E&nbsp;&nbsp;R&nbsp;&nbsp;S";
   } else if( cameraPosition.x <= (earth.planet.position.x + mars.planet.position.x)/2) {
     // console.log("earth");
-    textDiv.innerHTML = "E&nbsp;&nbsp;A&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;H";
+    textDiv.innerHTML = "C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T";
   } else if( cameraPosition.x > (earth.planet.position.x + mars.planet.position.x)/2) {
     // console.log("mars");
-    textDiv.innerHTML = "M&nbsp;&nbsp;A&nbsp;&nbsp;R&nbsp;&nbsp;S";
+    textDiv.innerHTML = "R&nbsp;&nbsp;E&nbsp;&nbsp;G&nbsp;&nbsp;I&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N";
   }
 }
 
@@ -63,6 +63,7 @@ window.onclick = function(event) {
 document.onkeydown = function(event) {  
   modal.style.display = "none";
 }
+
 
 
 document.addEventListener('keydown', function(e) {
@@ -100,7 +101,7 @@ document.addEventListener('keydown', function(e) {
     if(countKeys == 0)
       moveCamera();
     
-    function moveCamera() {
+    function moveCamera(spline) {
     
       camPosIndex+=smoothness;
       if (camPosIndex < unknown) {
