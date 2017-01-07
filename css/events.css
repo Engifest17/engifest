@@ -1,0 +1,16 @@
+.event-ul {
+	text-decoration: none;
+	list-style: none;
+}
+.event-list {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.event-list:hover {
+	text-decoration: none;
+	color: white;
+	margin-top: 10px;
+}

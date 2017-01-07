@@ -11,42 +11,42 @@ var satelliteModal6 = document.getElementById('satellite-modal-6');
 var satelliteModal7 = document.getElementById('satellite-modal-7');
 var satelliteModal8 = document.getElementById('satellite-modal-8');
 
-$('#satellite-p-1').click(function() {
+$('#satellite-p-1, #satellite-1').click(function() {
     console.log("in satelliteModal1");
     satelliteModal1.style.display = "block";
 });
 
-$('#satellite-p-2').click(function() {
+$('#satellite-p-2, #satellite-2').click(function() {
     console.log("in satelliteModal2");
     satelliteModal2.style.display = "block";
 });
 
-$('#satellite-p-3').click(function() {
+$('#satellite-p-3, #satellite-3').click(function() {
     console.log("in satelliteModal3");
     satelliteModal3.style.display = "block";
 });
 
-$('#satellite-p-4').click(function() {
+$('#satellite-p-4, #satellite-4').click(function() {
     console.log("in satelliteModal4");
     satelliteModal4.style.display = "block";
 });
 
-$('#satellite-p-5').click(function() {
+$('#satellite-p-5, #satellite-5').click(function() {
     console.log("in satelliteModal5");
     satelliteModal5.style.display = "block";
 });
 
-$('#satellite-p-6').click(function() {
+$('#satellite-p-6, #satellite-6').click(function() {
     console.log("in satelliteModal6");
     satelliteModal6.style.display = "block";
 });
 
-$('#satellite-p-7').click(function() {
+$('#satellite-p-7, #satellite-7').click(function() {
     console.log("in satelliteModal7");
     satelliteModal7.style.display = "block";
 });
 
-$('#satellite-p-8').click(function() {
+$('#satellite-p-8, #satellite-8').click(function() {
     console.log("in satelliteModal8");
     satelliteModal8.style.display = "block";
 });
@@ -79,6 +79,8 @@ window.onclick = function(event) {
         satelliteModal8.style.display = "none";
     }
 }
+
+
 document.onkeydown = function(event) {  
 	modal.style.display = "none";
 	satelliteModal1.style.display = "none";
