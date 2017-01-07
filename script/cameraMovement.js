@@ -128,8 +128,20 @@ function performEvents() {
 		$('#events-satellite').fadeIn(800).css({
 			"display": "block"
 		});
+
 	}, 1000);
-		
+	// $("p[id^='satellite-p']").each(function(i, el) {
+	// 	$(this).mouseenter(function(){
+	// 		$(this).addClass('float');
+	// 		// console.log(this);
+	// 	});
+	// 	$(this).mouseleave(function(){
+	// 		var no = $(this).attr('id').split('-');
+	// 		$(this).removeClass('float');
+	// 	});
+
+
+	// });
 	
 	
 }

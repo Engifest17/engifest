@@ -21,6 +21,8 @@
 	width: 16%;
 }
 
+
+
 #satellite-div-2 {
 	position: absolute;
 	top: 13%;
@@ -59,11 +61,11 @@
 
 #satellite-div-6 {
 	position: absolute;
-	top: 40%;
-	left: 74%;
+	top: 45%;
+	left: 76%;
 }
 #satellite-6 {
-	width: 20%;
+	width: 22%;
 }
 
 #satellite-div-7 {
@@ -99,9 +101,9 @@
     -moz-animation-timing-function: ease-in-out;
 }
 @-webkit-keyframes Floatingxs{
-    from {-webkit-transform:translate(-50%, 0%) rotate(0deg);}
-    50% {-webkit-transform:translate(-50%, 20%) rotate(360deg);}
-    to {-webkit-transform: translate(-50%, 0%) rotate(0deg);    }    
+    from {-webkit-transform:translate(-50%, 0%) }
+    50% {-webkit-transform:translate(-50%, 60%) }
+    to {-webkit-transform: translate(-50%, 0%)  }    
 }
     
 @-moz-keyframes Floatings{
