@@ -38,6 +38,13 @@ $('#registration').click(function() {
   var unknown = 400;
 
 function moveCamera(spline, otherSpline = false) {			// spline is the curve and otherSpline is wheather this is the main spline camera rotation or not
+    // none display events satellites
+	$('#events-satellite').fadeOut(800).css({
+		"display": "none"
+	});
+  
+
+
   var camPosIndex = 0;
 
   var newInterval = setInterval(function() {
@@ -115,6 +122,14 @@ function performEvents() {
 	var newSpline = new Spline();
 	newSpline.makeSplineFromPoints(newPoints);
 	moveCamera(newSpline.curve, true);
+	// console.log(newPoints[1]);
+	setTimeout(function() {
+		$('#events-satellite').fadeIn(800).css({
+			"display": "block"
+		});
+	}, 1000);
+		
+	
 	
 }
 

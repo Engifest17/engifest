@@ -64,6 +64,7 @@ document.onkeydown = function(event) {
   modal.style.display = "none";
 }
 
+// SATELLITES
 
 
 // document.addEventListener('keydown', function(e) {

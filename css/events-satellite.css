@@ -1,0 +1,289 @@
+#events-satellite{
+	width: 100%;
+	display: none;
+}
+
+
+.style-p {
+	font-size: 20px;
+	color: #ffffff;
+	font-family: "Quarca";
+	text-shadow: 0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F;
+	cursor: hand;
+}
+#satellite-div-1 {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+}
+
+#satellite-1 {
+	width: 16%;
+}
+
+#satellite-div-2 {
+	position: absolute;
+	top: 13%;
+	left: 25%;
+}
+#satellite-2 {
+	width: 16%;
+}
+
+#satellite-div-3 {
+	position: absolute;
+	top: 12%;
+	left: 40%;
+}
+#satellite-3 {
+	width: 16%;
+}
+
+#satellite-div-4 {
+	position: absolute;
+	top: 18%;
+	left: 53%;
+}
+#satellite-4 {
+	width: 16%;
+}
+
+#satellite-div-5 {
+	position: absolute;
+	top: 29%;
+	left: 65%;
+}
+#satellite-5 {
+	width: 16%;
+}
+
+#satellite-div-6 {
+	position: absolute;
+	top: 40%;
+	left: 74%;
+}
+#satellite-6 {
+	width: 20%;
+}
+
+#satellite-div-7 {
+	position: absolute;
+	top: 57%;
+	left: 83%;
+}
+#satellite-7 {
+	width: 25%;
+}
+
+#satellite-div-8 {
+	position: absolute;
+	top: 75%;
+	left: 89%;
+}
+#satellite-8 {
+	width: 40%;
+}
+
+
+
+
+/*floating satellite*/
+.float-satellite {
+	-webkit-animation-name: Floatingxs;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs{
+    from {-webkit-transform:translate(-50%, 0%) rotate(0deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(360deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(0deg);    }    
+}
+    
+@-moz-keyframes Floatings{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite1 {
+	-webkit-animation-name: Floatingxs1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings1;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs1{
+    from {-webkit-transform:translate(-50%, 0%) rotate(-80deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(-100deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(-80deg);    }    
+}
+    
+@-moz-keyframes Floatings1{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite2 {
+	-webkit-animation-name: Floatingxs2;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings2;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs2{
+    from {-webkit-transform:translate(-50%, 0%) rotate(-60deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(-80deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(-60deg);    }    
+}
+    
+@-moz-keyframes Floatings2{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite3 {
+	-webkit-animation-name: Floatingxs3;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings3;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs3{
+    from {-webkit-transform:translate(-50%, 0%) rotate(-20deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(-40deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(-20deg);    }    
+}
+    
+@-moz-keyframes Floatings3{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+
+.float-satellite4 {
+	-webkit-animation-name: Floatingxs4;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings4;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs4{
+    from {-webkit-transform:translate(-50%, 0%) rotate(0deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(-20deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(0deg);    }    
+}
+    
+@-moz-keyframes Floatings4{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite5 {
+	-webkit-animation-name: Floatingxs5;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings5;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs5{
+    from {-webkit-transform:translate(-50%, 0%) rotate(20deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(0deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(20deg);    }    
+}
+    
+@-moz-keyframes Floatings5{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite6 {
+	-webkit-animation-name: Floatingxs6;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings6;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs6{
+    from {-webkit-transform:translate(-50%, 0%) rotate(30deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(10deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(30deg);    }    
+}
+    
+@-moz-keyframes Floatings6{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite7 {
+	-webkit-animation-name: Floatingxs7;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings7;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs7{
+    from {-webkit-transform:translate(-50%, 0%) rotate(50deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(30deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(50deg);    }    
+}
+    
+@-moz-keyframes Floatings7{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
+.float-satellite8 {
+	-webkit-animation-name: Floatingxs8;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings8;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs8{
+    from {-webkit-transform:translate(-50%, 0%) rotate(60deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(40deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(60deg);    }    
+}
+    
+@-moz-keyframes Floatings8{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}
+
