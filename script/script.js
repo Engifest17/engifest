@@ -43,17 +43,42 @@ function showText(cameraPosition) {
 // });
 
 //MODAL
-var modal = document.getElementById('myModal');
+var sponsorModal = document.getElementById('sponsorModal');
 $('#textDiv').click(function() {
     console.log("hello");
-    modal.style.display = "block";
+    sponsorModal.style.display = "block";
 });
 
 // When the user clicks on <span> (x), close the modal
-$('#spanModal').click(function() {
-    modal.style.display = "none";
+$('#spanSponsorModal').click(function() {
+    sponsorModal.style.display = "none";
 });
 
+
+
+var contactModal = document.getElementById('contactModal');
+$('#textDiv').click(function() {
+    console.log("hello");
+    contactModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanContactModal').click(function() {
+    contactModal.style.display = "none";
+});
+
+
+
+var registerModal = document.getElementById('contactModal');
+$('#textDiv').click(function() {
+    console.log("hello");
+    registerModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanContactModal').click(function() {
+    registerModal.style.display = "none";
+});
 // When the user clicks anywhere outside of the modal, close it
 
 // SATELLITES
