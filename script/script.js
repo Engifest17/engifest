@@ -16,7 +16,7 @@ function showText(cameraPosition) {
   var textDiv = document.getElementById('textDiv');
   if(cameraPosition.x <= (sun.planet.position.x + mercury.planet.position.x)/2) {
     // console.log("sun");
-    textDiv.innerHTML = "H&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;E";
+    textDiv.innerHTML = "H&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;&nbsp;E";
   } else if( cameraPosition.x <= (mercury.planet.position.x + venus.planet.position.x)/2) {
     // console.log("mercury");
     textDiv.innerHTML = "E&nbsp;&nbsp;V&nbsp;&nbsp;E&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;S";
@@ -66,97 +66,97 @@ document.onkeydown = function(event) {
 
 
 
-document.addEventListener('keydown', function(e) {
-  // console.log(e);
+// document.addEventListener('keydown', function(e) {
+//   // console.log(e);
 
 
-  var smoothness = 10;
-  var unknown = 2000;
+//   var smoothness = 10;
+//   var unknown = 2000;
 
 
 
-  if(e.key === "ArrowRight") {
-  	e.preventDefault();
+//   if(e.key === "ArrowRight") {
+//   	e.preventDefault();
 
-  	// console.log("right");
-  	//MOVE CAMERA ALONG SPLINE
-    function checkSame(index) {
-      if(camera.position.x == randomPoints[index].x && camera.position.y == randomPoints[index].y && camera.position.z == randomPoints[index].z) {
-        return true;
-      }
-      return false;
-    }
-    if(checkSame(2) || checkSame(4) || checkSame(6)) {
-        if(countKeys != 0) {
-          countKeys--;
-          if(countKeys == 0) {
-            moveCamera();
-          }
-        } else {            
-          countKeys = countKeysMax;  
-        }
-    } else {
-      countKeys =0;
-    }
-    if(countKeys == 0)
-      moveCamera();
+//   	// console.log("right");
+//   	//MOVE CAMERA ALONG SPLINE
+//     function checkSame(index) {
+//       if(camera.position.x == randomPoints[index].x && camera.position.y == randomPoints[index].y && camera.position.z == randomPoints[index].z) {
+//         return true;
+//       }
+//       return false;
+//     }
+//     if(checkSame(2) || checkSame(4) || checkSame(6)) {
+//         if(countKeys != 0) {
+//           countKeys--;
+//           if(countKeys == 0) {
+//             moveCamera();
+//           }
+//         } else {            
+//           countKeys = countKeysMax;  
+//         }
+//     } else {
+//       countKeys =0;
+//     }
+//     if(countKeys == 0)
+//       moveCamera();
     
-    function moveCamera(spline) {
+//     function moveCamera(spline) {
     
-      camPosIndex+=smoothness;
-      if (camPosIndex < unknown) {
-        // camPosIndex = 0;
-        var camPos = spline.getPoint(camPosIndex / unknown);
-        var camRot = spline.getPoint(camPosIndex / unknown);
-        // console.log("right2");
-        camera.position.x = camPos.x;
-        camera.position.y = camPos.y;
-        camera.position.z = camPos.z;
-        // if(camera.position.x >= mars.mesh.position.x +100) {
-          // camera.rotation.x = camRot.x;
-          // camera.rotation.y = camRot.y;
-          // camera.rotation.z = camRot.z;
-          // if(spline.getPoint((camPosIndex+smoothness) / unknown).z > spline.getPoint((camPosIndex) / unknown).z)
-          //   camera.lookAt(spline.getTangent((camPosIndex-smoothness) / unknown));
-          // else 
-          //   camera.lookAt(spline.getTangent((camPosIndex+smoothness) / unknown));
-        // }
-      } else {
-        camPosIndex = unknown - smoothness;
-      }
+//       camPosIndex+=smoothness;
+//       if (camPosIndex < unknown) {
+//         // camPosIndex = 0;
+//         var camPos = spline.getPoint(camPosIndex / unknown);
+//         var camRot = spline.getPoint(camPosIndex / unknown);
+//         // console.log("right2");
+//         camera.position.x = camPos.x;
+//         camera.position.y = camPos.y;
+//         camera.position.z = camPos.z;
+//         // if(camera.position.x >= mars.mesh.position.x +100) {
+//           // camera.rotation.x = camRot.x;
+//           // camera.rotation.y = camRot.y;
+//           // camera.rotation.z = camRot.z;
+//           // if(spline.getPoint((camPosIndex+smoothness) / unknown).z > spline.getPoint((camPosIndex) / unknown).z)
+//           //   camera.lookAt(spline.getTangent((camPosIndex-smoothness) / unknown));
+//           // else 
+//           //   camera.lookAt(spline.getTangent((camPosIndex+smoothness) / unknown));
+//         // }
+//       } else {
+//         camPosIndex = unknown - smoothness;
+//       }
 
 
-     	// saturn.position.x += 2;
-    	camera.updateProjectionMatrix();
+//      	// saturn.position.x += 2;
+//     	camera.updateProjectionMatrix();
 
     
-    }
-  } else if (e.key === "ArrowLeft") {
-  	e.preventDefault();
-  	// console.log("left");
-  	//MOVE CAMERA ALONG SPLINE
-    camPosIndex-=smoothness;
-    if (camPosIndex < unknown && camPosIndex > 0) {
-      // camPosIndex = 0;
-      var camPos = spline.getPoint(camPosIndex / unknown);
-      var camRot = spline.getTangent(camPosIndex / unknown);
-      // console.log("right2");
-      camera.position.x = camPos.x;
-      camera.position.y = camPos.y;
-      camera.position.z = camPos.z;
+//     }
+//   } else if (e.key === "ArrowLeft") {
+//   	e.preventDefault();
+//   	// console.log("left");
+//   	//MOVE CAMERA ALONG SPLINE
+//     camPosIndex-=smoothness;
+//     if (camPosIndex < unknown && camPosIndex > 0) {
+//       // camPosIndex = 0;
+//       var camPos = spline.getPoint(camPosIndex / unknown);
+//       var camRot = spline.getTangent(camPosIndex / unknown);
+//       // console.log("right2");
+//       camera.position.x = camPos.x;
+//       camera.position.y = camPos.y;
+//       camera.position.z = camPos.z;
       
-      // camera.rotation.x = camRot.x;
-      // camera.rotation.y = camRot.y;
-      // camera.rotation.z = camRot.z;
-      // if(spline.getPoint((camPosIndex+smoothness) / unknown).z > spline.getPoint((camPosIndex) / unknown).z)
-      //   camera.lookAt(spline.getTangent((camPosIndex-smoothness) / unknown));
-      // else 
-      //   camera.lookAt(spline.getTangent((camPosIndex+smoothness) / unknown));
-    } else {
-      camPosIndex = smoothness;
-    }
-  	// saturn.position.x -= 2;
-  	camera.updateProjectionMatrix();
-  }
-  // console.log(e);
-});
+//       // camera.rotation.x = camRot.x;
+//       // camera.rotation.y = camRot.y;
+//       // camera.rotation.z = camRot.z;
+//       // if(spline.getPoint((camPosIndex+smoothness) / unknown).z > spline.getPoint((camPosIndex) / unknown).z)
+//       //   camera.lookAt(spline.getTangent((camPosIndex-smoothness) / unknown));
+//       // else 
+//       //   camera.lookAt(spline.getTangent((camPosIndex+smoothness) / unknown));
+//     } else {
+//       camPosIndex = smoothness;
+//     }
+//   	// saturn.position.x -= 2;
+//   	camera.updateProjectionMatrix();
+//   }
+//   // console.log(e);
+// });

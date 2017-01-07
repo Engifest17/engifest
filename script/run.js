@@ -66,7 +66,7 @@ var distanceBetweenPlanets = 200;
 var planetXCoordinate = 0;
 
 // make celestial bodies
-var sun = new Saturn(planetXCoordinate, 0 , 0, false, 150, 5, 5, 0xfaff70);       // posx, posy, posz, wantParticles, size, detailLevel, noise, planetColor
+var sun = new Saturn(planetXCoordinate, 0 , 0, false, 150, 5, 0, 0xfaff70);       // posx, posy, posz, wantParticles, size, detailLevel, noise, planetColor
 sun.mesh.rotation.x = .02;
 sun.mesh.rotation.z = .02;
 scene.add(sun.mesh);
@@ -103,29 +103,7 @@ planetXCoordinate += distanceBetweenPlanets;
 // // SPLINE CURVE
 var camPosIndex = 0;
 var randomPoints = [];
-// for ( var i = 0; i < 100; i ++ ) {
 
-
-  //////////
-  //////////
-  //for getTangent in the script.js (camer.lookAt)
-  //////////
-// camera.position.z = 300;
-//     randomPoints.push(
-//         new THREE.Vector3(0, 0, 300),
-//         new THREE.Vector3(400, 0, 300),
-//         new THREE.Vector3(400, 0, 0),
-//         new THREE.Vector3(700, 10, 0),
-//         new THREE.Vector3(750, 0, 0),     //reched venus
-//         new THREE.Vector3(800, 10, 100),
-//         new THREE.Vector3(1100, 0, 0),
-//         new THREE.Vector3(1000, 0, 0),
-//         new THREE.Vector3(900, 0, 200),
-//         new THREE.Vector3(900, 0, 100)
-
-
-//     );
-// }
 
 camera.position.z = 2*sun.size;
   // for getPoint
@@ -197,7 +175,7 @@ function loop(){
   //cube.rotation.x +=.05;
   
   //PLANET ROTATION  --> for testing comment it
-  sun.planet.rotation.y+=.01;
+  sun.planet.rotation.y+=.005;
   sun.updateParticlesRotation();
 
   mercury.planet.rotation.y+=.01;

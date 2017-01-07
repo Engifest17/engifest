@@ -2,22 +2,14 @@ $('#home').click(function() {
 	var newSpline = new Spline();
 	console.log("home");
 	newSpline.makeSplinePoints(camera, sun);
-	if(camera.position.x <= sun.planet.position.x) {
-		moveCameraRight(newSpline.curve);
-	} else {
-		moveCameraLeft(newSpline.curve);	
-	}
+	moveCamera(newSpline.curve);
 });
 
 $('#events').click(function() {
 	var newSpline = new Spline();
 	console.log("events");
 	newSpline.makeSplinePoints(camera, mercury);
-	if(camera.position.x <= mercury.planet.position.x) {
-		moveCameraRight(newSpline.curve);
-	} else {
-		moveCameraLeft(newSpline.curve);	
-	}
+	moveCamera(newSpline.curve);
 });
 
 
@@ -25,39 +17,27 @@ $('#sponsers').click(function() {
 	var newSpline = new Spline();
 	console.log("sponsers");
 	newSpline.makeSplinePoints(camera, venus);
-	if(camera.position.x <= venus.planet.position.x) {
-		moveCameraRight(newSpline.curve);
-	} else {
-		moveCameraLeft(newSpline.curve);	
-	}
+	moveCamera(newSpline.curve);
 });
 
 $('#contact').click(function() {
 	var newSpline = new Spline();
 	console.log("contact");
 	newSpline.makeSplinePoints(camera, earth);
-	if(camera.position.x <= earth.planet.position.x) {
-		moveCameraRight(newSpline.curve);
-	} else {
-		moveCameraLeft(newSpline.curve);	
-	}
+	moveCamera(newSpline.curve);
 });
 
 $('#registration').click(function() {
 	var newSpline = new Spline();
 	console.log("registration");
 	newSpline.makeSplinePoints(camera, mars);
-	if(camera.position.x <= mars.planet.position.x) {
-		moveCameraRight(newSpline.curve);
-	} else {
-		moveCameraLeft(newSpline.curve);	
-	}
+	moveCamera(newSpline.curve);
 });
 
   var smoothness = 10;
   var unknown = 400;
 
-function moveCameraRight(spline) {
+function moveCamera(spline, otherSpline = false) {			// spline is the curve and otherSpline is wheather this is the main spline camera rotation or not
   var camPosIndex = 0;
 
   var newInterval = setInterval(function() {
@@ -71,47 +51,111 @@ function moveCameraRight(spline) {
 	  } else {
 	    camPosIndex = unknown - smoothness;
 	    clearInterval(newInterval);
+	    // console.log(camera.position.x, sun.planet.position.x);
+	    
+	    if(otherSpline == false) {
+	    	function nearness(camera) {
+		    	var least = [];
+		    	least.push(9999999, undefined);
+		    	if(least[0] > Math.abs(camera.position.x - sun.planet.position.x)) {
+		    		least[0] = Math.abs(camera.position.x - sun.planet.position.x);
+		    		least[1] = sun;
+		    	} 
+		    	if(least[0] > Math.abs(camera.position.x - mercury.planet.position.x)) {
+		    		least[0] = Math.abs(camera.position.x - mercury.planet.position.x);
+		    		least[1] = mercury;
+		    	}
+		    	if(least[0] > Math.abs(camera.position.x - venus.planet.position.x)) {
+		    		least[0] = Math.abs(camera.position.x - venus.planet.position.x);
+		    		least[1] = venus;
+		    	}
+		    	if(least[0] > Math.abs(camera.position.x - earth.planet.position.x)) {
+		    		least[0] = Math.abs(camera.position.x - earth.planet.position.x);
+		    		least[1] = earth;
+		    	} 
+		    	if(least[0] > Math.abs(camera.position.x - mars.planet.position.x)) {
+		    		least[0] = Math.abs(camera.position.x - mars.planet.position.x);
+		    		least[1] = mars;
+		    	}
+
+		    	return least[1];
+		    }
+
+		    var objectMostNear = nearness(camera);
+		    if(objectMostNear === sun) {
+		    	console.log('i am at home');
+
+		    } else if(objectMostNear === mercury) {
+		    	console.log('i am at events');
+		    	performEvents();
+		    } else if(objectMostNear === venus) {
+		    	console.log('i am at sponsers');
+
+		    } else if(objectMostNear === earth) {
+		    	console.log('i am at contact');
+
+		    } else if(objectMostNear === mars) {
+		    	console.log('i am at registration');
+
+		    }
+		}	// otherSpline if condition ended
 	  }
 	  camera.updateProjectionMatrix();
   }, 20);
 
 }
 
-function moveCameraLeft(spline) {
-  var camPosIndex = 0;
 
-  var newInterval = setInterval(function() {
-  	  camPosIndex+=smoothness;
-	  if (camPosIndex < unknown) {
-	    var camPos = spline.getPoint(camPosIndex / unknown);
-	    var camRot = spline.getPoint(camPosIndex / unknown);
-	    camera.position.x = camPos.x;
-	    camera.position.y = camPos.y;
-	    camera.position.z = camPos.z;
-	  } else {
-	    camPosIndex = unknown - smoothness;
-	    clearInterval(newInterval);
-	  }
-	  camera.updateProjectionMatrix();
-  }, 20);
-
- //  var camPosIndex = unknown;
- //  var newInterval = setInterval(function() {
-	// camPosIndex-=smoothness;
- //    if (camPosIndex < unknown && camPosIndex >= 0) {
- //      var camPos = spline.getPoint(camPosIndex / unknown);
- //      var camRot = spline.getTangent(camPosIndex / unknown);
- //      camera.position.x = camPos.x;
- //      camera.position.y = camPos.y;
- //      camera.position.z = camPos.z;
- //    } else {
- //      camPosIndex = 0;
- //      clearInterval(newInterval);
- //    }
- //  	camera.updateProjectionMatrix();
- //  }, 20);
-
+function performEvents() {
+	var newPoints = [];
+	newPoints.push(
+		new THREE.Vector3(camera.position.x, camera.position.y, camera.position.z),
+		new THREE.Vector3(camera.position.x + 10, camera.position.y + 10, camera.position.z)
+	);
+	var newSpline = new Spline();
+	newSpline.makeSplineFromPoints(newPoints);
+	moveCamera(newSpline.curve, true);
+	
 }
+
+
+
+// function moveCameraLeft(spline) {
+//   var camPosIndex = 0;
+
+//   var newInterval = setInterval(function() {
+//   	  camPosIndex+=smoothness;
+// 	  if (camPosIndex < unknown) {
+// 	    var camPos = spline.getPoint(camPosIndex / unknown);
+// 	    var camRot = spline.getPoint(camPosIndex / unknown);
+// 	    camera.position.x = camPos.x;
+// 	    camera.position.y = camPos.y;
+// 	    camera.position.z = camPos.z;
+// 	  } else {
+// 	    camPosIndex = unknown - smoothness;
+// 	    clearInterval(newInterval);
+// 	    console.log('done');
+// 	  }
+// 	  camera.updateProjectionMatrix();
+//   }, 20);
+
+//  //  var camPosIndex = unknown;
+//  //  var newInterval = setInterval(function() {
+// 	// camPosIndex-=smoothness;
+//  //    if (camPosIndex < unknown && camPosIndex >= 0) {
+//  //      var camPos = spline.getPoint(camPosIndex / unknown);
+//  //      var camRot = spline.getTangent(camPosIndex / unknown);
+//  //      camera.position.x = camPos.x;
+//  //      camera.position.y = camPos.y;
+//  //      camera.position.z = camPos.z;
+//  //    } else {
+//  //      camPosIndex = 0;
+//  //      clearInterval(newInterval);
+//  //    }
+//  //  	camera.updateProjectionMatrix();
+//  //  }, 20);
+
+// }
 
 
 
