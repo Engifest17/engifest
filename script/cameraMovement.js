@@ -97,6 +97,7 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		    	performEvents();
 		    } else if(objectMostNear === venus) {
 		    	console.log('i am at sponsers');
+		    	performSponsers();
 
 		    } else if(objectMostNear === earth) {
 		    	console.log('i am at contact');
@@ -133,6 +134,29 @@ function performEvents() {
 	
 }
 
+
+function performSponsers() {
+	setTimeout(function() {
+	    console.log("hello");
+	    $(".modal-header p").text("Sponsors");
+	    
+	    modal.style.display = "block";
+	}, 1000);
+	// When the user clicks on <span> (x), close the modal
+	$('#spanModal').click(function() {
+	    modal.style.display = "none";
+	});
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	document.onkeydown = function(event) {  
+	  modal.style.display = "none";
+	}
+}
 
 
 // function moveCameraLeft(spline) {
