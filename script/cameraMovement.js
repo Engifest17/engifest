@@ -101,9 +101,11 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 
 		    } else if(objectMostNear === earth) {
 		    	console.log('i am at contact');
+		    	performContact();
 
 		    } else if(objectMostNear === mars) {
 		    	console.log('i am at registration');
+		    	performRegister();
 
 		    }
 		}	// otherSpline if condition ended
@@ -148,7 +150,7 @@ function performEvents() {
 
 
 	function performSponsers() {
-		
+
 		setTimeout(function() {
 		    console.log("hello");
 		    // $(".modal-header p").text("Sponsors");
@@ -156,13 +158,13 @@ function performEvents() {
 		    sponsorModal.style.display = "block";
 		}, 1000);
 		// When the user clicks on <span> (x), close the modal
-		$('#spanModal').click(function() {
+		$('#spanSponsorModal').click(function() {
 		    sponsorModal.style.display = "none";
 		});
 
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
-		    if (event.target == modal) {
+		    if (event.target == sponsorModal) {
 		        sponsorModal.style.display = "none";
 		    }
 		}
@@ -171,6 +173,53 @@ function performEvents() {
 		}
 	}
 
+	function performContact() {
+		
+		setTimeout(function() {
+		    console.log("hello");
+		    // $(".modal-header p").text("Sponsors");
+		    
+		    contactModal.style.display = "block";
+		}, 1000);
+		// When the user clicks on <span> (x), close the modal
+		$('#spanContactModal').click(function() {
+		    contactModal.style.display = "none";
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == contactModal) {
+		        contactModal.style.display = "none";
+		    }
+		}
+		document.onkeydown = function(event) {  
+		  contactModal.style.display = "none";
+		}
+	}
+
+	function performRegister() {
+		
+		setTimeout(function() {
+		    console.log("hello");
+		    // $(".modal-header p").text("Sponsors");
+		    
+		   registerModal.style.display = "block";
+		}, 1000);
+		// When the user clicks on <span> (x), close the modal
+		$('#spanRegisterModal').click(function() {
+		    registerModal.style.display = "none";
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == registerModal) {
+		        registerModal.style.display = "none";
+		    }
+		}
+		document.onkeydown = function(event) {  
+		  registerModal.style.display = "none";
+		}
+	}
 
 // function moveCameraLeft(spline) {
 //   var camPosIndex = 0;

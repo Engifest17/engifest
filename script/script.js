@@ -50,10 +50,35 @@ $('#textDiv').click(function() {
 });
 
 // When the user clicks on <span> (x), close the modal
-$('#spanModal').click(function() {
+$('#spanSponsorModal').click(function() {
     sponsorModal.style.display = "none";
 });
 
+
+
+var contactModal = document.getElementById('contactModal');
+$('#textDiv').click(function() {
+    console.log("hello");
+    contactModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanContactModal').click(function() {
+    contactModal.style.display = "none";
+});
+
+
+
+var registerModal = document.getElementById('contactModal');
+$('#textDiv').click(function() {
+    console.log("hello");
+    registerModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanContactModal').click(function() {
+    registerModal.style.display = "none";
+});
 // When the user clicks anywhere outside of the modal, close it
 
 // SATELLITES
