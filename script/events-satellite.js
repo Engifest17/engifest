@@ -10,7 +10,6 @@ var satelliteModal5 = document.getElementById('satellite-modal-5');
 var satelliteModal6 = document.getElementById('satellite-modal-6');
 var satelliteModal7 = document.getElementById('satellite-modal-7');
 var satelliteModal8 = document.getElementById('satellite-modal-8');
-
 $('#satellite-p-1').click(function() {
     console.log("in satelliteModal1");
     satelliteModal1.style.display = "block";
@@ -54,7 +53,7 @@ $('#satellite-p-8').click(function() {
 
 // When the user clicks on <span> (x), close the modal
 $('#spanModalSatellite').click(function() {
-    modal.style.display = "none";
+    sponsorModal.style.display = "none";
     satelliteModal1.style.display = "none";
     satelliteModal2.style.display = "none";
     satelliteModal3.style.display = "none";
@@ -67,8 +66,8 @@ $('#spanModalSatellite').click(function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
-        modal.style.display = "none";
+    if (event.target == sponsorModal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
+        sponsorModal.style.display = "none";
         satelliteModal1.style.display = "none";
         satelliteModal2.style.display = "none";
         satelliteModal3.style.display = "none";
@@ -80,7 +79,7 @@ window.onclick = function(event) {
     }
 }
 document.onkeydown = function(event) {  
-	modal.style.display = "none";
+	sponsorModal.style.display = "none";
 	satelliteModal1.style.display = "none";
 	satelliteModal2.style.display = "none";
 	satelliteModal3.style.display = "none";

@@ -43,15 +43,15 @@ function showText(cameraPosition) {
 // });
 
 //MODAL
-var modal = document.getElementById('myModal');
+var sponsorModal = document.getElementById('sponsorModal');
 $('#textDiv').click(function() {
     console.log("hello");
-    modal.style.display = "block";
+    sponsorModal.style.display = "block";
 });
 
 // When the user clicks on <span> (x), close the modal
 $('#spanModal').click(function() {
-    modal.style.display = "none";
+    sponsorModal.style.display = "none";
 });
 
 // When the user clicks anywhere outside of the modal, close it

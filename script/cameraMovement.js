@@ -147,28 +147,29 @@ function performEvents() {
 }
 
 
-function performSponsers() {
-	setTimeout(function() {
-	    console.log("hello");
-	    $(".modal-header p").text("Sponsors");
-	    
-	    modal.style.display = "block";
-	}, 1000);
-	// When the user clicks on <span> (x), close the modal
-	$('#spanModal').click(function() {
-	    modal.style.display = "none";
-	});
+	function performSponsers() {
+		
+		setTimeout(function() {
+		    console.log("hello");
+		    // $(".modal-header p").text("Sponsors");
+		    
+		    sponsorModal.style.display = "block";
+		}, 1000);
+		// When the user clicks on <span> (x), close the modal
+		$('#spanModal').click(function() {
+		    sponsorModal.style.display = "none";
+		});
 
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-	    if (event.target == modal) {
-	        modal.style.display = "none";
-	    }
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        sponsorModal.style.display = "none";
+		    }
+		}
+		document.onkeydown = function(event) {  
+		  sponsorModal.style.display = "none";
+		}
 	}
-	document.onkeydown = function(event) {  
-	  modal.style.display = "none";
-	}
-}
 
 
 // function moveCameraLeft(spline) {
