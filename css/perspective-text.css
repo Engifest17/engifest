@@ -132,7 +132,7 @@
 	-ms-transform: perspective(300px) rotateX(25deg);
 	-o-transform: perspective(300px) rotateX(25deg);
 	transform: perspective(300px) rotateX(25deg);
-	text-shadow: 0 0 0.1em #87F, 0 0 0.1em #87F, 0 0 0.1em #87F;
+	text-shadow: 0 0 0.01em #87F, 0 0 0.01em #87F, 0 0 0.01em #87F;
 }
 
 /*#titles:after
