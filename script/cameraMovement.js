@@ -13,9 +13,9 @@ $('#events').click(function() {
 });
 
 
-$('#sponsers').click(function() {
+$('#sponsors').click(function() {
 	var newSpline = new Spline();
-	console.log("sponsers");
+	console.log("sponsors");
 	newSpline.makeSplinePoints(camera, venus);
 	moveCamera(newSpline.curve);
 });
@@ -96,7 +96,7 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		    	console.log('i am at events');
 		    	performEvents();
 		    } else if(objectMostNear === venus) {
-		    	console.log('i am at sponsers');
+		    	console.log('i am at sponsors');
 		    	performSponsers();
 
 		    } else if(objectMostNear === earth) {
