@@ -1,39 +1,51 @@
 <html>
 	<head>
 
-	<!-- No cache -->
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
-	
+		<!-- No cache -->
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		
 
-	<title>Engifest</title>
-	<link href="css/loader.css" type="text/css" rel="stylesheet"/>
-	<link href="css/events-satellite.css" type="text/css" rel="stylesheet"/>
-	<link href="css/events.css" type="text/css" rel="stylesheet"/>
-	<link href="css/modal.css" type="text/css" rel="stylesheet"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet"/>
-	<link href="css/home.css" type="text/css" rel="stylesheet"/>
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-	<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet"/>
-	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
-	<link href="css/menu.css" type="text/css" rel="stylesheet"/>
-	<link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+		<title>Engifest</title>
 
+		<!-- Css Needed -->
+
+		<link href="css/loader.css" type="text/css" rel="stylesheet"/>
+		<link href="css/events-satellite.css" type="text/css" rel="stylesheet"/>
+		<link href="css/modal.css" type="text/css" rel="stylesheet"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+		<link href="css/home.css" type="text/css" rel="stylesheet"/>
+		<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+		<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet"/>
+		<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+		<link href="css/menu.css" type="text/css" rel="stylesheet"/>
+		<link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+		<link href="css/events-nav.css" type="text/css" rel="stylesheet"/>
+
+		<link href="css/events.css" type="text/css" rel="stylesheet"/>
 	</head>
 	<body id="container">
 		
+		<!-- Loader -->
 		<div id="loader">
 			<svg width="300px" height="200px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet" style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
-  <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-  <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-        d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+			  <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+			        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+			  <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+			        d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
 				</svg>
 		</div>
 		<script type="text/javascript" src="script/loader.js"></script>
+		
+		<!-- Canvas  -->
 		<canvas id="myCanvas"></canvas>
+
+		<!-- Top Heading -->
 		<div id="textDiv" class="float"></div>
+		
+
+		<!-- Sidebar -->
 		<div id="sidebar-container">
 	        <div class="page-container sidebar-collapsed">
 				<div class="sidebar-menu">
@@ -64,7 +76,11 @@
 		        </div>
 	        </div>
         </div>
+
+        <!-- Extra div for future -->
 		<div id="controlDiv" class="float"></div>
+		
+		<!-- Lower Horizontal Menu -->
 		<div id="Menu" class="row">
 			<div id="home" class="col-xs-2 col-xs-offset-1 align-center">HOME</div>
 			<div id="events" class="col-xs-2 align-center">EVENTS</div>
@@ -73,6 +89,9 @@
 			<div id="registration" class="col-xs-2 align-center">REGISTRATION</div>
 		</div>
 		
+		<!-- MODALS -->
+
+		<!-- Sponsor Modal -->
 		<div id="sponsorModal" class="modal">
 		  <!-- Modal content -->
 		  <div class="modal-content">
@@ -93,6 +112,7 @@
 		  </div>
 		</div>
 
+		<!-- Contact Modal -->
 		<div id="contactModal" class="modal">
 		  <!-- Modal content -->
 		  <div class="modal-content">
@@ -113,6 +133,7 @@
 		  </div>
 		</div>
 
+		<!-- Register Modal -->
 		<div id="registerModal" class="modal">
 		  <!-- Modal content -->
 		  <div class="modal-content">
@@ -133,8 +154,9 @@
 		  </div>
 		</div>
 
-		<!-- Home -->
-<!-- 		<div class="object1">
+		<!-- Home Icons for future -->
+		<!--
+		<div class="object1">
 		    <div class="ray_box">
 		        <div class="ray ray1"></div>
 		        <div class="ray ray2"></div>
@@ -227,7 +249,7 @@
 
 
 
-		<!-- Events Satellites -->
+		<!-- Events Planet Satellites -->
 		<div id="events-satellite">
 			
 			<!-- Satellite  1 -->
@@ -244,18 +266,243 @@
 			    </div>
 			    <div class="modal-body">
 			      <div class="row">
-	                    <div class="col-xs-12">
-	                    <center>
-	                    	<ul class="event-ul">
-	                            <li><a href="events/shakedown/"  class="event-list">Shakedown</a></li>
-	                            <li><a href="events/kaleidoscope/" class="event-list">Kaleidoscope</a></li>
-	                            <li><a href="events/arte-fotographia/" class="event-list">Arte Fotographia</a></li>
-	                            <li><a href="events/mr-miss-engi/" class="event-list">Mr and Miss Engifest</a></li>
-	                            <li><a href="events/kumar-vishwas-live/" class="event-list">Kumar Vishwas Live</a></li>
-	                            <li><a href="events/the-engi-quiz/" class="event-list">The Engi Quiz</a></li>
-	                            
+	                    <div class="col-xs-3">
+	                    	<ul class="event-ul nav nav-tabs nav-stacked">
+	                            <li><a data-toggle="tab" href="#shakedown" class="event-list float-nav">Shakedown</a></li>
+	                            <li><a data-toggle="tab" href="#kaleidoscope" class="event-list float-nav">Kaleidoscope</a></li>
+	                            <li><a data-toggle="tab" href="#arte-fotographia" class="event-list float-nav">Arte Fotographia</a></li>
+	                            <li><a data-toggle="tab" href="#mr-and-miss-engifest" class="event-list float-nav">Mr and Miss Engifest</a></li>
+	                            <li><a data-toggle="tab" href="#kumar-vishwas-live" class="event-list float-nav">Kumar Vishwas Live</a></li>
+	                            <li><a data-toggle="tab" href="#the-engi-quiz" class="event-list float-nav">The Engi Quiz</a></li>	                            
 	                        </ul>
-	                       </center>
+	                    </div>
+	                    <div class="col-xs-9">
+	                    	<div class= "tab-content">
+		                    	<!-- Shakedown -->
+		                    	<div id="shakedown" class="tab-pane fade in active">
+			                    	<ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#shakedownhome">Info</a></li>
+						            </ul>
+			                    	<div class="tab-content">
+						                <div id="shakedownhome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">The whirr of tyres speeding down the tracks; the feel of vintage bikes driving by you… 
+												Yes! SHAKEDOWN, the most anticipated event of Engifest’16 is here!<br>
+												Presented by Souls of Speed, Shakedown is one-of-a-kind roadshow- a spectacle which would leave you enticed. Jaws will drop and eyes will widen, as daredevil stunts are pulled off with ease and style!
+						                        </div>
+						                        <div class="info-col">
+						                            <b>Date: </b>14 Feb<br>
+						                            <b>Time: </b>12:00 pm<br>
+						                            <b>Venue: </b>Hostel Road<br>
+						                        </div>
+						                        <div class="info-col"></div>
+						                    </div>
+						                </div>
+						            </div>
+					            </div>
+
+					            <!-- Kaleidoscope -->
+					            <div id="kaleidoscope" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#kalehome">Info</a></li>
+						                <li><a data-toggle="tab" href="#kalemenu1">Rules</a></li>
+						                <li><a data-toggle="tab" href="#kalemenu2">Contact</a></li>
+						                <button class="btn pull-right" href="http://goo.gl/forms/fZuODXpy9B">Register</button>
+						            </ul>
+
+						            <div class="tab-content">
+						                <div id="kalehome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">Kaleidoscope is the official film festival of Engifest, conducted by Parchhayi, The photography and film making society of DTU. Works of art in the form of short films will be showcased and judged by prominent figures in the film industry.
+						                        </div>
+						                        <div class="info-col">
+						                            <b>Date: </b>14 Feb<br>
+						                            <b>Time: </b>12:00 pm<br>
+						                            <b>Venue: </b>Edusat Hall<br>
+						                        </div>
+						                        <div class="info-col"></div>
+						                    </div>
+						                </div>
+						                <div id="kalemenu1" class="tab-pane fade">
+						                    <div class="rule-content">
+						                        Team size: At most 15 (including the actors)<br>
+						                        Time Limit: Max 15 minutes<br>
+						                        Theme: No particular theme <br>
+						                        Judging Criteria: Editing, Cinematography, Script, Acting, Sound design and Overall impact.<br>
+						                        1. The movies should be either in Hindi or English or both.<br>
+						                        2. If you choose to make a film in Hindi, it must contain English subtitles. <br>
+						                        3. No other languages will be allowed.<br>
+						                        4. Please note that we will not be responsible for postal delays, losses or damages–make sure you send in entries sufficiently before the deadline.<br>
+						                        5. You may use any video camera you deem suitable for shooting the movie.<br>
+						                        6. However, we strongly discourage low-resolution cameras, including webcams and mobile-phone cameras.<br>
+						                        7. The content of the movie should be appropriate for public screening and thus should have no vulgarity.<br>
+						                        8. Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification.<br>
+						                        9. Entries must be the original work of the entrants and must not infringe third-party's rights.<br>
+						                        10. Please avoid photo slideshows, remixes, spoofs and advertisements.<br>
+						                        11. Plagiarism is strictly prohibited.<br>
+						                        12. Sound track can be borrowed, but with due credit.<br>
+						                    </div>
+						                </div>
+						                <div id="kalemenu2" class="tab-pane fade">
+						                    <div class="contact-content">
+						                        <b>Adil Haris </b> +91-7042364785 <br>
+						                        <b>Ayush Goel </b> +91-9999888200 <br>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- Arte Fotographic -->
+						        <div id="arte-fotographia" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#artehome">Info</a></li>
+						                <li><a data-toggle="tab" href="#artemenu1">Rules</a></li>
+						                <!--<li><a data-toggle="tab" href="#menu2">Contact</a></li>-->
+						            </ul>
+
+						            <div class="tab-content">
+						                <div id="artehome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">Arte fotographia is the official Online photography competition of engifest conducted by parchhayi, the photography and film making society of DTU.
+						                        <br>
+						                        <b>Themes</b><br>
+						                        1. Night : Astro photography. <br>
+						                        2. From where i stand : perspective photography. <br>
+						                        3. Minimalism : abstract photography. <br>
+						                        4. The four seasons : summer, spring , fall , winters. <br>
+						                        5. Cityscapes : travel and architectural photography. <br>
+
+						                        <br>
+						                        Entries to be sent to the email ID : parchhayidtu@gmail.com.
+						                        <br>
+
+						                           <b>Date: </b> Results on 13 Feb<br>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div id="artemenu1" class="tab-pane fade">
+						                    <div class="rule-content">
+						                        <b>Judging Criteria</b>
+						                        1.  30% weightage to the relevance to the theme,caption,appeal and clarity. <br>
+						                        2. The participants can send only one entry per theme, therefore a total of 5 photos maximum.  <br>
+						                        3.      10% to the mass appeal or the number of likes on Facebook. <br>
+						                        
+						                        <b>Rules</b>
+						                        1. There will be 5 themes. <br>
+						                        2. We allow semiclassical styles provided there are distinctive classical elements are identified in the performance, amalgamated with other fusion styles. Contact the event coordinator in case of any queries.<br>
+						                        3. All sorts of cameras are allowed.  Excessive post-processing won't be allowed (no panoramas, no hdrs, no filters) please do note that the histogram of the entry sent to us will easily give away the use of any of the unaccepted methods. <br>
+						                        4. EXIF to be mailed to us along with the photo. Photos should be in JPEG format with an appropriate caption. <br>
+						                    </div>
+						                </div>
+						                <!--<div id="menu2" class="tab-pane fade">
+						                    <div class="contact-content">
+						                        <b>Aditi Maheshwari </b> +91-9717481156<br>
+						                    </div>
+						                </div>-->
+						            </div>
+						        </div>
+
+						        <!-- Mr and Miss Engifest -->
+						        <div id="mr-and-miss-engifest" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#mrandhome">Info</a></li>
+						                <li><a data-toggle="tab" href="#mrandmenu1">Rules</a></li>
+						                <!--<li><a data-toggle="tab" href="#menu2">Contact</a></li>-->
+						            </ul>
+
+						            <div class="tab-content">
+						                <div id="mrandhome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">Engifest brings to you, Mr. and Ms. Engifest! A contest that celebrates poise and grace; Mr. and Ms. Engifest looks for those who bring a certain style to their spontaneity, who believe being themselves is the best trend they can set. <br>
+
+												The online preliminary round is open, so email your best picture before February 10, 2016 to engifest2016@gmail.com with your name and college, and a caption describing yourself; and we’ll upload them here. Try to get the maximum likes possible on your picture (Note: A like is counted only if the Engifest page has been liked too).
+												10 Girls and 10 Boys will be selected from the online round on the basis of the number of likes and will participate on the final day of event.
+						                        <br>
+
+						                           <b>Date: </b>15 Feb<br>
+						                            <b>Time: </b>12:00 pm<br>
+						                            <b>Venue: </b>Mini OAT<br>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div id="mrandmenu1" class="tab-pane fade">
+						                    <div class="rule-content">
+						                        1.  No costumes or props will be provided. <br>
+						                        2. For the FIRST ROUND, participants will be asked to walk the ramp with given props.  <br>
+						                        3.  For the SECOND ROUND, the participants will introduce themselves in not more than two-three lines. This introduction will then be followed by TALENT SHOW. Any sound track used for this round must be brought in a Pen Drive. Time limit- 3 minutes. <br>
+						                        4. Participants have to ensure that one copy of their track is with the event coordinator and one copy as a backup, is present with them. <br>
+						                        5. Marks will be deducted in case of a time limit violation. <br>
+						                        6. The THIRD ROUND will be a question and answer round. <br>
+						                        7. Vulgarity in any form will not be allowed. <br>
+						                        8. It is the contestant’s duty to be careful and aware of the order of performance. <br>
+						                        9. Order of performance will be decided by the organisers. <br>
+						                        10. The judges’ decision is final and binding on all. <br>                        
+						                    </div>
+						                </div>
+						                <!--<div id="menu2" class="tab-pane fade">
+						                    <div class="contact-content">
+						                        <b>Aditi Maheshwari </b> +91-9717481156<br>
+						                    </div>
+						                </div>-->
+						            </div>
+						        </div>
+
+						        <!-- Kumar Vishwas Live -->
+						        <div id="kumar-vishwas-live" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#kumarhome">Info</a></li>
+						            </ul>
+
+						            <div class="tab-content">
+						                <div id="kumarhome" class="tab-pane fade in active">
+						                    <div class="info-content" style="overflow-y: auto;">
+						                        <div class="info-row">
+						                            A poet, a writer, a politician, an inspiration. <br>
+													With his extraordinary recitation skills, he engulfs the crowd in his own mesmerizing aura. With the stellar power of his presentation, he sends hard-hitting messages encased in bittersweet words.<br>
+													Ladies and gentlemen, Engifest’16 presents to you KUMAR VISHWAS, a motivator, a craftsman, who brought in a breath of fresh air to Hindi Poetry with his innovative, intense words and transformed the way the Indian youth looks at poetry, forever. <br>
+						                            <b>Date: </b>15 Feb<br>
+						                            <b>Time: </b>5:00 pm<br>
+						                            <b>Venue: </b>OAT<br>
+						                        </div>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- The Engi Quiz -->
+						        <div id="the-engi-quiz" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#engiquizhome">Info</a></li>
+						                <!--<li><a data-toggle="tab" href="#menu1">Rules</a></li>-->
+						                <li><a data-toggle="tab" href="#engiquizmenu2">Contact</a></li>
+						                <button class="btn pull-right" href="http://www.quizzinginc.com/pages/events/event_detail/MTA=/The_Engi_Quiz">Register</button>
+						            </ul>
+
+						            <div class="tab-content">
+						                <div id="engiquizhome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">Engifest'16 in association with Quizzing Inc presents "The Engi Quiz".<br>
+												On the very first day of the fest, get your wits sharpened and knowledge replenished for you'll need every bit of your grey cells to crack this nut.<br>
+												A general quiz spread over 9 rounds with two prelims slots to thoroughly test your mental faculties giving you a chance to win awesome prizes including up to 15,000 in cash!
+						                        </div>
+						                        <div class="info-row">
+						                            <b>Date: </b>13 Feb<br>
+						                            <b>Time: </b>12:00 pm<br>
+						                            <b>Venue: </b>Edusat Hall<br>
+						                            <b>Team Size: </b> 2 per team, cross college teams allowed<br>
+						                            <b>Fees: </b>50/- per team<br>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div id="engiquizmenu2" class="tab-pane fade">
+						                    <div class="contact-content">
+						                        <b>Bhavesh </b> +91-8447587727<br>
+						                        <b>Suyash </b> +91-7838912711<br>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
 	                    </div>
 	         
 	                </div>
@@ -265,9 +512,6 @@
 			    </div> -->
 			  </div>
 			</div>
-
-
-
 
 			<!-- Satellite  2 -->
 			<div id="satellite-div-2">
@@ -445,19 +689,19 @@
 			    </div> -->
 			  </div>
 			</div>
-
-
 		</div>
 		
 
 
 
+
+		<!-- Script Needed -->
 		<script src="script/three.js"></script>
 		<!-- <script src="script/OrbitControls.js"></script> -->
 		<!-- <script src="script/DatGuiMin.js"></script> -->
 		<script src="script/jquery.js"></script>
 		<script src="script/jquery-ui.min.js"></script>
-		<script src="script/bootstrap.min.js"></script>
+		
 		<script src="script/script.js"></script>
 		<!-- <script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script> -->
 		<!-- <script src="http://threejs.org/examples/js/loaders/MTLLoader.js"></script> -->
@@ -472,7 +716,7 @@
 		<script src="script/run.js"></script>
 		<script src="script/cameraMovement.js"></script>
 		<script src="script/events-satellite.js"></script>
+		<script src="script/bootstrap.min.js"></script>
 		<script src="script/home.js"></script>
-		
 	</body>
 </html>
