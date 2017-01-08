@@ -138,6 +138,8 @@ camera.position.z = 2*sun.size;
 
 /// stars
 var minDistance = 700;
+var minDistanceZ = 3000;
+var maxDistanceZ = 100;
 var maxDistance = 3000;
 
 for (var i = 0; i < 6000; i++) {
@@ -145,7 +147,7 @@ for (var i = 0; i < 6000; i++) {
   
   star.mesh.position.x = -minDistance + Math.random() * maxDistance;
   star.mesh.position.y = -minDistance + Math.random() * maxDistance;  
-  star.mesh.position.z = -minDistance + Math.random() * 2*minDistance;
+  star.mesh.position.z = -minDistanceZ + Math.random() * 2*minDistanceZ;
   
   scene.add(star.mesh);
 }

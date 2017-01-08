@@ -1,0 +1,222 @@
+body {
+  background:#2EB5E5 ;
+}
+
+.object1 { 
+  position: absolute;
+	top:20%;
+	left:25%;
+	right:0;
+	bottom:0; 
+	width:70px;
+	height:70px;
+	border-radius:50%;	
+	background:#87F;
+	opacity:0.7;			
+	box-shadow: 0px 0px 40px 15px #87F;  
+}
+
+.object1:hover {
+  opacity: 1;
+}
+.object2 { 
+  position: absolute;
+	top:45%;
+	left:20%;
+	right:0;
+	bottom:0; 
+	width:70px;
+	height:70px;
+	border-radius:50%;	
+	background:#87F;
+	opacity:0.7;			
+	box-shadow: 0px 0px 40px 15px #87F;  
+}
+.object2:hover {
+  opacity: 1;
+}
+.object3 { 
+  position: absolute;
+  top:70%;
+  left:25%;
+  bottom:0; 
+  width:70px;
+  height:70px;
+  border-radius:50%;  
+  background:#87F;
+  opacity:0.7;      
+  box-shadow: 0px 0px 40px 15px #87F;  
+}
+.object3:hover {
+  opacity: 1;
+}
+.object4 { 
+  position: absolute;
+	top:20%;
+	right:25%;
+	bottom:0; 
+	width:70px;
+	height:70px;
+	border-radius:50%;	
+	background:#87F;
+	opacity:0.7;			
+	box-shadow: 0px 0px 40px 15px #87F;  
+}
+.object4:hover {
+  opacity: 1;
+}
+.object5 { 
+  position: absolute;
+	top:45%;
+	right:20%;
+	bottom:0; 
+	width:70px;
+	height:70px;
+	border-radius:50%;	
+	background:#87F;
+	opacity:0.7;			
+	box-shadow: 0px 0px 40px 15px #87F;  
+}
+.object5:hover {
+  opacity: 1;
+}
+.object6 { 
+  position: absolute;
+  top:70%;
+  right:25%;
+  bottom:0; 
+  width:70px;
+  height:70px;
+  border-radius:50%;  
+  background:#87F;
+  opacity:0.7;      
+  box-shadow: 0px 0px 40px 15px #87F;  
+}
+.object6:hover {
+  opacity: 1;
+}
+.ray_box {
+  position: absolute;
+  margin: auto;
+	top:0px;
+	left:0;
+	right:0;
+	bottom:0;	
+  width:30px;  
+  -webkit-animation: ray_anim 120s linear infinite;
+  animation: ray_anim 120s linear infinite;
+}
+.ray {  
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); 
+    margin-left:10px;
+    border-radius:80% 80% 0 0;
+    position:absolute;
+    opacity:0.1;
+}
+
+.ray1 {    
+    height:70px;
+    width:30px;
+   -webkit-transform: rotate(180deg);
+    top:-75px;
+    left: 15px;
+}
+.ray2 {
+    height:30px;
+    width:8px;
+   -webkit-transform: rotate(220deg);
+    top:-50px;
+    left: 75px;
+}
+.ray3 {
+    height:80px;
+    width:50px;
+   -webkit-transform: rotate(250deg);
+    top:-80px;
+    left: 70px;
+}
+.ray4 {
+    height:60px;
+    width:14px;
+   -webkit-transform: rotate(305deg);
+    top:30px;
+    left: 70px;
+}
+.ray5 {
+    height:60px;
+    width:30px;
+   -webkit-transform: rotate(-15deg);
+    top:60px;
+    left: 40px;
+}
+.ray6 {
+    height:50px;
+    width:50px;
+   -webkit-transform: rotate(30deg);
+    top:60px;
+    left: -40px;
+}
+.ray7 {
+    height:80px;
+    width:10px;
+   -webkit-transform: rotate(70deg);
+    top:-35px;
+    left: -40px;
+}
+.ray8 {
+    height:50px;
+    width:30px;
+   -webkit-transform: rotate(100deg);
+    top:-45px;
+    left:-35px;
+}
+.ray9 {
+    height:80px;
+    width:10px;
+   -webkit-transform: rotate(120deg);
+    top:-65px;
+    left:-60px;
+}
+.ray10 {
+    height:70px;
+    width:23px;
+   -webkit-transform: rotate(150deg);
+    top:-65px;
+    left: -60px;
+}
+
+
+@-webkit-keyframes ray_anim { 
+		0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+.float-home {
+  -webkit-animation-name: Floatingxh;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatingh;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxh{
+    from {-webkit-transform:translate(-50%, 0%);}
+    50% {-webkit-transform:translate(-40%, 40%);}
+    to {-webkit-transform: translate(-50%, 0%);    }    
+}
+    
+@-moz-keyframes Floatingh{
+    from {-moz-transform:translate(-50%, 0%);}
+    65% {-moz-transform:translate(-50%, 2%);}
+    to {-moz-transform: translate(-50%, 0%);}    
+}

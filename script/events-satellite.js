@@ -55,6 +55,7 @@ $('#satellite-p-8, #satellite-8').click(function() {
 
 // When the user clicks on <span> (x), close the modal
 $('#spanModalSatellite').click(function() {
+	console.log('close fired');
     sponsorModal.style.display = "none";
     contactModal.style.display = "none";
     registerModal.style.display = "none";
@@ -70,6 +71,7 @@ $('#spanModalSatellite').click(function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+	console.log('window on click fired');
     if (event.target == registerModal ||event.target == sponsorModal || event.target == contactModal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
         sponsorModal.style.display = "none";
         contactModal.style.display = "none";
@@ -86,7 +88,8 @@ window.onclick = function(event) {
 }
 
 
-document.onkeydown = function(event) {  
+document.onkeydown = function(event) { 
+	console.log('onkeydwn fired'); 
 	sponsorModal.style.display = "none";
     contactModal.style.display = "none";
     registerModal.style.display = "none";

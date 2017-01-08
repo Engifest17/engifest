@@ -162,15 +162,6 @@ function performEvents() {
 		    sponsorModal.style.display = "none";
 		});
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == sponsorModal) {
-		        sponsorModal.style.display = "none";
-		    }
-		}
-		document.onkeydown = function(event) {  
-		  sponsorModal.style.display = "none";
-		}
 	}
 
 	function performContact() {
@@ -186,15 +177,6 @@ function performEvents() {
 		    contactModal.style.display = "none";
 		});
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == contactModal) {
-		        contactModal.style.display = "none";
-		    }
-		}
-		document.onkeydown = function(event) {  
-		  contactModal.style.display = "none";
-		}
 	}
 
 	function performRegister() {
@@ -210,15 +192,7 @@ function performEvents() {
 		    registerModal.style.display = "none";
 		});
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == registerModal) {
-		        registerModal.style.display = "none";
-		    }
-		}
-		document.onkeydown = function(event) {  
-		  registerModal.style.display = "none";
-		}
+
 	}
 
 // function moveCameraLeft(spline) {
