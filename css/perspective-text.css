@@ -119,7 +119,8 @@
 	left: 50%;
 	margin-left: -9em;
 	color: white;
-	font-size: 350%;
+	font-size: 300%;
+	font-family: "Quarca";
 	text-align: justify;
 	overflow: hidden;
 	-webkit-transform-origin: 50% 100%;
