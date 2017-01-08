@@ -1,3 +1,12 @@
+// Horizontal menu bar
+
+
+
+
+
+
+
+// sidebar
 $('#sidebar-container').mouseenter(function(){
     $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
 });

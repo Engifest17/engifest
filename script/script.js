@@ -79,6 +79,28 @@ $('#textDiv').click(function() {
 $('#spanContactModal').click(function() {
     registerModal.style.display = "none";
 });
+
+var aboutEngifestModal = document.getElementById('aboutEngifestModal');
+$('#about').click(function() {
+    console.log("hello");
+    aboutEngifestModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanAboutEngifestModal').click(function() {
+    aboutEngifestModal.style.display = "none";
+});
+
+var dtuLegacyModal = document.getElementById('dtuLegacyModal');
+$('#legacy').click(function() {
+    console.log("hello");
+    dtuLegacyModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanDTULegacyModal').click(function() {
+    dtuLegacyModal.style.display = "none";
+});
 // When the user clicks anywhere outside of the modal, close it
 
 // SATELLITES

@@ -81,6 +81,10 @@ body {
     to {-moz-transform: translate(-50%, 0%);}    
 }
 
+.marginLeft {
+	padding-left: 20px;
+}
+
 .scaling{
 	float: left;
 	-webkit-animation-name: scalex;
