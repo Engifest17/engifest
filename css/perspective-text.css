@@ -132,6 +132,7 @@
 	-ms-transform: perspective(300px) rotateX(25deg);
 	-o-transform: perspective(300px) rotateX(25deg);
 	transform: perspective(300px) rotateX(25deg);
+	text-shadow: 0 0 0.1em #87F, 0 0 0.1em #87F, 0 0 0.1em #87F;
 }
 
 /*#titles:after
@@ -181,25 +182,25 @@
 /* animation */
 @-webkit-keyframes scroll {
 	0% { top: 100%; }
-	100% { top: -50%; }
+	100% { top: -10%; }
 }
 
 @-moz-keyframes scroll {
 	0% { top: 100%; }
-	100% { top: -50%; }
+	100% { top: -10%; }
 }
 
 @-ms-keyframes scroll {
 	0% { top: 100%; }
-	100% { top: -50%; }
+	100% { top: -1%; }
 }
 
 @-o-keyframes scroll {
 	0% { top: 100%; }
-	100% { top: -50%; }
+	100% { top: -10%; }
 }
 
 @keyframes scroll {
 	0% { top: 100%; }
-	100% { top: -50%; }
+	100% { top: -10%; }
 }
