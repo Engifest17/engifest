@@ -11,6 +11,14 @@ function Spline() {
 		this.curve = new THREE.CatmullRomCurve3(this.points);	
 	}
 
+	this.pushCamera = function(cam) {
+		this.points.push(
+			new THREE.Vector3(cam.position.x, cam.position.y, cam.position.z),			
+			new THREE.Vector3(cam.position.x, cam.position.y, cam.position.z)			
+		);
+		this.curve = new THREE.CatmullRomCurve3(this.points);
+	}
+
 	this.makeSplinePoints = function(obj1, obj2) {			//obj1 is camera and obj2 is planet
 		this.points.push(
 			new THREE.Vector3(obj1.position.x, obj1.position.y, obj1.position.z)			

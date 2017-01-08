@@ -37,9 +37,10 @@ $('#registration').click(function() {
   var smoothness = 10;
   var unknown = 400;
 
+
 function moveCamera(spline, otherSpline = false) {			// spline is the curve and otherSpline is wheather this is the main spline camera rotation or not
     // none display events satellites
-	$('#events-satellite').fadeOut(800).css({
+	$('#events-satellite, #titles').fadeOut(800).css({
 		"display": "none"
 	});
   
@@ -91,7 +92,7 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		    var objectMostNear = nearness(camera);
 		    if(objectMostNear === sun) {
 		    	console.log('i am at home');
-
+		    	performHome();
 		    } else if(objectMostNear === mercury) {
 		    	console.log('i am at events');
 		    	performEvents();
@@ -115,6 +116,14 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 
 }
 
+function performHome() {
+	setTimeout(function() {
+		$('#titles').fadeIn(800).css({
+			"display": "block"
+		});
+
+	}, 400);
+}
 
 function performEvents() {
 	var newPoints = [];
