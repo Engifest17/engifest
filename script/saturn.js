@@ -13,6 +13,7 @@ var Saturn = function(posx, posy, posz, wantParticles, size, detailLevel, noise,
   // - a mesh that holds the planet and the ring
 
   // the geometry of the planet is a tetrahedron
+  this.sunFactorCamera = 2.9;
   this.size = size;
   var geomPlanet = new THREE.TetrahedronGeometry(size, detailLevel);  
   // The shape of the planet is too perfect for my taste

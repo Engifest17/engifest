@@ -66,7 +66,7 @@ var distanceBetweenPlanets = 200;
 var planetXCoordinate = 0;
 
 // make celestial bodies
-var sun = new Saturn(planetXCoordinate, 0 , 0, false, 150, 5, 0, 0xfaff70);       // posx, posy, posz, wantParticles, size, detailLevel, noise, planetColor
+var sun = new Saturn(planetXCoordinate, 0 , 0, false, 100, 5, 0, 0xfaff70);       // posx, posy, posz, wantParticles, size, detailLevel, noise, planetColor
 sun.mesh.rotation.x = .02;
 sun.mesh.rotation.z = .02;
 scene.add(sun.mesh);
@@ -74,7 +74,7 @@ planetXCoordinate += 300;
 
 
 
-var mercury = new Saturn(planetXCoordinate, 0 , 0, false, 10, 2, 1, 0xee5624);       // wantParticles, x, y, z
+var mercury = new Saturn(planetXCoordinate, 0 , 0, false, 10, 4, 0, 0xee5624);       // wantParticles, x, y, z
 mercury.mesh.rotation.x = .02;
 mercury.mesh.rotation.z = .02;
 scene.add(mercury.mesh);
@@ -105,7 +105,7 @@ var camPosIndex = 0;
 var randomPoints = [];
 
 
-camera.position.z = 2*sun.size;
+camera.position.z = sun.sunFactorCamera*sun.size;
   // for getPoint
   var nearness;
   var sunFarPoint = 300;

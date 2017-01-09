@@ -1,5 +1,6 @@
 $('#home').click(function() {
 	var newSpline = new Spline();
+	hideEventsHomeExtras();
 	console.log("home");
 	newSpline.makeSplinePoints(camera, sun);
 	moveCamera(newSpline.curve);
@@ -7,6 +8,7 @@ $('#home').click(function() {
 
 $('#events').click(function() {
 	var newSpline = new Spline();
+	hideEventsHomeExtras();
 	console.log("events");
 	newSpline.makeSplinePoints(camera, mercury);
 	moveCamera(newSpline.curve);
@@ -15,6 +17,7 @@ $('#events').click(function() {
 
 $('#sponsors').click(function() {
 	var newSpline = new Spline();
+	hideEventsHomeExtras();
 	console.log("sponsors");
 	newSpline.makeSplinePoints(camera, venus);
 	moveCamera(newSpline.curve);
@@ -22,6 +25,7 @@ $('#sponsors').click(function() {
 
 $('#contact').click(function() {
 	var newSpline = new Spline();
+	hideEventsHomeExtras();
 	console.log("contact");
 	newSpline.makeSplinePoints(camera, earth);
 	moveCamera(newSpline.curve);
@@ -29,18 +33,24 @@ $('#contact').click(function() {
 
 $('#registration').click(function() {
 	var newSpline = new Spline();
+	hideEventsHomeExtras();
 	console.log("registration");
 	newSpline.makeSplinePoints(camera, mars);
 	moveCamera(newSpline.curve);
 });
 
+function hideEventsHomeExtras() {
+	$('#events-satellite, #home-design').fadeOut(800).css({
+		"display": "none"
+	});
+}
   var smoothness = 10;
   var unknown = 400;
 
 
 function moveCamera(spline, otherSpline = false) {			// spline is the curve and otherSpline is wheather this is the main spline camera rotation or not
     // none display events satellites
-	$('#events-satellite, #titles').fadeOut(800).css({
+	$('#events-satellite, #home-design').fadeOut(800).css({
 		"display": "none"
 	});
   
@@ -118,11 +128,11 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 
 function performHome() {
 	setTimeout(function() {
-		$('#titles').fadeIn(800).css({
+		$('#home-design').fadeIn(800).css({
 			"display": "block"
 		});
 
-	}, 400);
+	}, 0);
 }
 
 function performEvents() {

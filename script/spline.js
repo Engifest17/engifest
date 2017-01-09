@@ -1,7 +1,7 @@
 function Spline() {
 	this.points = [];
 	this.cameraFarPoint = 300;
-	this.sunCameraFarPoint = 500;
+	this.sunCameraFarPoint = 600;
 	this.curve;
 	
 	this.makeSplineFromPoints = function(arr) {
@@ -30,7 +30,7 @@ function Spline() {
 		}
 
 		if(obj2 === sun) {
-			this.points.push(new THREE.Vector3(obj2.planet.position.x, obj2.planet.position.y, 2*obj2.size));
+			this.points.push(new THREE.Vector3(obj2.planet.position.x, obj2.planet.position.y, obj2.sunFactorCamera*obj2.size));
 		} else if(obj2 === mercury) {
 			this.points.push(new THREE.Vector3(obj2.planet.position.x, obj2.planet.position.y+5, 2*obj2.size));
 		} else if(obj2 === venus) {
