@@ -10,6 +10,10 @@
 	font-family: "Quarca";
     src: url(../fonts/quarca-norm-thin.otf);
 }
+@font-face {
+	font-family: "Pathway Gothic One";
+	src: url(../fonts/PathwayGothicOne-Regular.ttf);
+}
 
 body,html {
 	margin: 0;
