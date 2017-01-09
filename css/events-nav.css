@@ -16,7 +16,7 @@
     
 @-moz-keyframes Floatingnav{
     from {-moz-transform:translate(0%, 0%);}
-    65% {-moz-transform:translate(0%, 2%);}
+    50% {-moz-transform:translate(0%, 20%);}
     to {-moz-transform: translate(0%, 0%);}    
 }
 

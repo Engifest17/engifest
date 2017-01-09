@@ -16,7 +16,7 @@ function showText(cameraPosition) {
   var textDiv = document.getElementById('textDiv');
   if(cameraPosition.x <= (sun.planet.position.x + mercury.planet.position.x)/2) {
     // console.log("sun");
-    textDiv.innerHTML = "H&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;&nbsp;E";
+    textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (mercury.planet.position.x + venus.planet.position.x)/2) {
     // console.log("mercury");
     textDiv.innerHTML = "E&nbsp;&nbsp;V&nbsp;&nbsp;E&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;S";

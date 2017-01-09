@@ -108,7 +108,7 @@
     
 @-moz-keyframes Floatings{
     from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
+    50% {-moz-transform:translate(-50%, 60%);}
     to {-moz-transform: translate(-50%, 0%);}    
 }
 
@@ -129,9 +129,9 @@
 }
     
 @-moz-keyframes Floatings1{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(-80deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(-100deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(-80deg);    }  
 }
 
 .float-satellite2 {
@@ -140,7 +140,7 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floatings2;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 7s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -151,9 +151,9 @@
 }
     
 @-moz-keyframes Floatings2{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(-60deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(-80deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(-60deg);    }    
 }
 
 .float-satellite3 {
@@ -162,7 +162,7 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floatings3;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 8s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -173,9 +173,9 @@
 }
     
 @-moz-keyframes Floatings3{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(-20deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(-40deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(-20deg);    }      
 }
 
 
@@ -185,7 +185,7 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floatings4;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 6s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -196,9 +196,9 @@
 }
     
 @-moz-keyframes Floatings4{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(0deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(-20deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(0deg);    }    
 }
 
 .float-satellite5 {
@@ -218,9 +218,9 @@
 }
     
 @-moz-keyframes Floatings5{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(20deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(0deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(20deg);    }   
 }
 
 .float-satellite6 {
@@ -229,7 +229,7 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floatings6;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 6s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -240,9 +240,9 @@
 }
     
 @-moz-keyframes Floatings6{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(30deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(10deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(30deg);    }   
 }
 
 .float-satellite7 {
@@ -251,7 +251,7 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floatings7;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -262,9 +262,9 @@
 }
     
 @-moz-keyframes Floatings7{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(50deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(30deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(50deg);    }    
 }
 
 .float-satellite8 {
@@ -273,7 +273,7 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floatings8;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 7s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -284,8 +284,8 @@
 }
     
 @-moz-keyframes Floatings8{
-    from {-moz-transform:translate(-50%, 0%);}
-    65% {-moz-transform:translate(-50%, 2%);}
-    to {-moz-transform: translate(-50%, 0%);}    
+    from {-moz-transform:translate(-50%, 0%) rotate(60deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(40deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(60deg);    }   
 }
 
