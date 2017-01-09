@@ -23,13 +23,14 @@ function showText(cameraPosition) {
   } else if( cameraPosition.x <= (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("venus");
     textDiv.innerHTML = "S&nbsp;&nbsp;P&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;S";
-  } else if( cameraPosition.x <= (earth.planet.position.x + mars.planet.position.x)/2) {
+  } else if( cameraPosition.x > (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("earth");
-    textDiv.innerHTML = "C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T";
-  } else if( cameraPosition.x > (earth.planet.position.x + mars.planet.position.x)/2) {
-    // console.log("mars");
     textDiv.innerHTML = "R&nbsp;&nbsp;E&nbsp;&nbsp;G&nbsp;&nbsp;I&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N";
-  }
+  } 
+  // else if( cameraPosition.x > (earth.planet.position.x + mars.planet.position.x)/2) {
+  //   // console.log("mars");
+  //   textDiv.innerHTML = "C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T";
+  // }
 }
 
 // document.getElementById('textDiv').addEventListener('click', function() {
@@ -56,14 +57,14 @@ $('#spanSponsorModal').click(function() {
 
 
 
-var registerModal = document.getElementById('contactModal');
+var registerModal = document.getElementById('registerModal');
 $('#textDiv').click(function() {
     console.log("hello");
     registerModal.style.display = "block";
 });
 
 // When the user clicks on <span> (x), close the modal
-$('#spanContactModal').click(function() {
+$('#spanRegisterModal').click(function() {
     registerModal.style.display = "none";
 });
 

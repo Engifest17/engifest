@@ -23,21 +23,21 @@ $('#sponsors').click(function() {
 	moveCamera(newSpline.curve);
 });
 
-$('#contact').click(function() {
-	var newSpline = new Spline();
-	hideEventsHomeExtras();
-	console.log("contact");
-	newSpline.makeSplinePoints(camera, earth);
-	moveCamera(newSpline.curve);
-});
-
 $('#registration').click(function() {
 	var newSpline = new Spline();
 	hideEventsHomeExtras();
 	console.log("registration");
-	newSpline.makeSplinePoints(camera, mars);
+	newSpline.makeSplinePoints(camera, earth);
 	moveCamera(newSpline.curve);
 });
+
+// $('#contact').click(function() {
+// 	var newSpline = new Spline();
+// 	hideEventsHomeExtras();
+// 	console.log("contact");
+// 	newSpline.makeSplinePoints(camera, mars);
+// 	moveCamera(newSpline.curve);
+// });
 
 function hideEventsHomeExtras() {
 	$('#events-satellite, #home-design-wrapper').fadeOut(800).css({
@@ -91,10 +91,10 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		    		least[0] = Math.abs(camera.position.x - earth.planet.position.x);
 		    		least[1] = earth;
 		    	} 
-		    	if(least[0] > Math.abs(camera.position.x - mars.planet.position.x)) {
-		    		least[0] = Math.abs(camera.position.x - mars.planet.position.x);
-		    		least[1] = mars;
-		    	}
+		    	// if(least[0] > Math.abs(camera.position.x - mars.planet.position.x)) {
+		    	// 	least[0] = Math.abs(camera.position.x - mars.planet.position.x);
+		    	// 	least[1] = mars;
+		    	// }
 
 		    	return least[1];
 		    }
@@ -111,14 +111,14 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		    	performSponsers();
 
 		    } else if(objectMostNear === earth) {
-		    	console.log('i am at contact');
-		    	performContact();
-
-		    } else if(objectMostNear === mars) {
 		    	console.log('i am at registration');
 		    	performRegister();
 
-		    }
+		    } 
+		    // else if(objectMostNear === mars) {
+		    // 	console.log('i am at contact');
+		    // 	performContact();
+		    // }
 		}	// otherSpline if condition ended
 	  }
 	  camera.updateProjectionMatrix();

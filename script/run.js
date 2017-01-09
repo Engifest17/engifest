@@ -92,11 +92,11 @@ earth.mesh.rotation.z = .02;
 scene.add(earth.mesh);
 planetXCoordinate += distanceBetweenPlanets;
 
-var mars = new Saturn(planetXCoordinate, 0 , 0, false, 20, 4, 2, 0xee5624);       // wantParticles, x, y, z
-mars.mesh.rotation.x = .02;
-mars.mesh.rotation.z = .02;
-scene.add(mars.mesh);
-planetXCoordinate += distanceBetweenPlanets;
+// var mars = new Saturn(planetXCoordinate, 0 , 0, false, 20, 4, 2, 0xee5624);       // wantParticles, x, y, z
+// mars.mesh.rotation.x = .02;
+// mars.mesh.rotation.z = .02;
+// scene.add(mars.mesh);
+// planetXCoordinate += distanceBetweenPlanets;
 
 
 
@@ -118,9 +118,9 @@ camera.position.z = sun.sunFactorCamera*sun.size;
       new THREE.Vector3(venus.planet.position.x, venus.planet.position.y+10, cameraMovingFarPoint),
       new THREE.Vector3(venus.planet.position.x, venus.planet.position.y+10, 2*venus.size),
       new THREE.Vector3(earth.planet.position.x, earth.planet.position.y +15, cameraMovingFarPoint),
-      new THREE.Vector3(earth.planet.position.x, earth.planet.position.y +15, 2*earth.size),
-      new THREE.Vector3(mars.planet.position.x, mars.planet.position.y + 20, cameraMovingFarPoint),
-      new THREE.Vector3(mars.planet.position.x, mars.planet.position.y +20, 2*mars.size)
+      new THREE.Vector3(earth.planet.position.x, earth.planet.position.y +15, 2*earth.size)
+      // new THREE.Vector3(mars.planet.position.x, mars.planet.position.y + 20, cameraMovingFarPoint),
+      // new THREE.Vector3(mars.planet.position.x, mars.planet.position.y +20, 2*mars.size)
       // new THREE.Vector3(mars.planet.position.x, mars.planet.position.y+20 + cameraMovingFarPoint,  2*mars.size)
       // new THREE.Vector3(mars.planet.position.x, mars.planet.position.y+20 + mars.size,  2*mars.size)
 
@@ -189,8 +189,8 @@ function loop(){
   earth.planet.rotation.y-=.01;
   earth.updateParticlesRotation();
 
-  mars.planet.rotation.y-=.01;
-  mars.updateParticlesRotation();
+  // mars.planet.rotation.y-=.01;
+  // mars.updateParticlesRotation();
 
   
 
