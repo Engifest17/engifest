@@ -3,10 +3,10 @@ var countKeys = 0;
 var countKeysMax = 5;
 function alignControlDiv(){
   var screenHeight = window.innerHeight;
-  var fontsize = $('#controlDiv').css("font-size");
+  var fontsize = $('#accomodationDiv').css("font-size");
   fontsize = fontsize.split("p");
   fontsize = fontsize[0];  
-  $('#controlDiv').css({
+  $('#accomodationDiv').css({
     "top":screenHeight - fontsize - 40 + "px"
   });
 }
@@ -56,19 +56,6 @@ $('#spanSponsorModal').click(function() {
 
 
 
-var contactModal = document.getElementById('contactModal');
-$('#textDiv').click(function() {
-    console.log("hello");
-    contactModal.style.display = "block";
-});
-
-// When the user clicks on <span> (x), close the modal
-$('#spanContactModal').click(function() {
-    contactModal.style.display = "none";
-});
-
-
-
 var registerModal = document.getElementById('contactModal');
 $('#textDiv').click(function() {
     console.log("hello");
@@ -79,6 +66,9 @@ $('#textDiv').click(function() {
 $('#spanContactModal').click(function() {
     registerModal.style.display = "none";
 });
+
+
+
 
 var aboutEngifestModal = document.getElementById('aboutEngifestModal');
 $('#about').click(function() {
@@ -101,6 +91,19 @@ $('#legacy').click(function() {
 $('#spanDTULegacyModal').click(function() {
     dtuLegacyModal.style.display = "none";
 });
+
+// Contact Modal
+var contactModal = document.getElementById('contactModal');
+$('#contact-us').click(function() {
+    console.log("hello");
+    contactModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanContactModal').click(function() {
+    contactModal.style.display = "none";
+});
+
 // When the user clicks anywhere outside of the modal, close it
 
 // SATELLITES
