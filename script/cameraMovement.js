@@ -40,7 +40,7 @@ $('#registration').click(function() {
 });
 
 function hideEventsHomeExtras() {
-	$('#events-satellite, #home-design').fadeOut(800).css({
+	$('#events-satellite, #home-design-wrapper').fadeOut(800).css({
 		"display": "none"
 	});
 }
@@ -50,7 +50,7 @@ function hideEventsHomeExtras() {
 
 function moveCamera(spline, otherSpline = false) {			// spline is the curve and otherSpline is wheather this is the main spline camera rotation or not
     // none display events satellites
-	$('#events-satellite, #home-design').fadeOut(800).css({
+	$('#events-satellite, #home-design-wrapper').fadeOut(800).css({
 		"display": "none"
 	});
   
@@ -128,7 +128,7 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 
 function performHome() {
 	setTimeout(function() {
-		$('#home-design').fadeIn(800).css({
+		$('#home-design-wrapper').fadeIn(800).css({
 			"display": "block"
 		});
 
