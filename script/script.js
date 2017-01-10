@@ -19,7 +19,7 @@ function showText(cameraPosition) {
     textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (mercury.planet.position.x + venus.planet.position.x)/2) {
     // console.log("mercury");
-    textDiv.innerHTML = "E&nbsp;&nbsp;V&nbsp;&nbsp;E&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;S";
+    textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("venus");
     textDiv.innerHTML = "S&nbsp;&nbsp;P&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;S";

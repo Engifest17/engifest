@@ -22,4 +22,24 @@ window.onload = function(){
     $('.lowermenusound').mouseenter(function() {
     	hoverMenuSound.play();
     });
+
+
+
+    $('div.lowermenusound').click(function(){
+	    var notClicked =  $('.lowermenusound').not(this);
+	    $(this).css({
+	    	"text-shadow": "none"
+	    	// "0 0 2.8em #87F, 0 0 2.8em #87F, 0 0 2.8em #87F !important"
+	    });
+	    notClicked.each(function(index) {
+	    	$(this).css({
+	    		"text-shadow": "0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F"
+	    	});
+	    });
+	});
+
+	$('#home').css({
+		"text-shadow": "none"
+		//"0 0 2.8em #87F, 0 0 2.8em #87F, 0 0 2.8em #87F !important"
+	});
 } 

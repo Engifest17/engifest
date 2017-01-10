@@ -122,7 +122,7 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		}	// otherSpline if condition ended
 	  }
 	  camera.updateProjectionMatrix();
-  }, 20);
+  }, 0);
 
 }
 

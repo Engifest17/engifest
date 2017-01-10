@@ -48,6 +48,10 @@ body,html {
 	left: 0%;
 }
 
+.lowermenusound:hover {
+	text-shadow: 0 0 2.8em #87F, 0 0 2.8em #87F, 0 0 2.8em #87F !important;
+}
+
 .align-center {
 	text-align: center;
 }
