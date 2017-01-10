@@ -49,6 +49,7 @@
     left: 10px;
     font-size: 4vh;
     color: #DADADA;
+    font-family: "Quarca";
     text-shadow: #4DD6E4 0 0 10px, #4DD6E4 0px 0px 5px;
     z-index: 510;
 }

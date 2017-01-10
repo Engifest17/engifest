@@ -9,4 +9,17 @@ window.onload = function(){
 	$('#titles').fadeIn(500).css({
 		"display": "block"
 	});
+
+	var backgroundAmbience = document.getElementById('background-ambience');
+	backgroundAmbience.play();
+	backgroundAmbience.addEventListener('ended', function() {
+        this.play();
+    }, false);
+
+
+    var hoverMenuSound = document.getElementById('hover-menu-sound');
+
+    $('.lowermenusound').mouseenter(function() {
+    	hoverMenuSound.play();
+    });
 } 
