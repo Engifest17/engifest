@@ -15,10 +15,10 @@ $('#events').click(function() {
 });
 
 
-$('#sponsors').click(function() {
+$('#pro-night').click(function() {
 	var newSpline = new Spline();
 	hideEventsHomeExtras();
-	console.log("sponsors");
+	console.log("pro night");
 	newSpline.makeSplinePoints(camera, venus);
 	moveCamera(newSpline.curve);
 });
@@ -107,8 +107,8 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 		    	console.log('i am at events');
 		    	performEvents();
 		    } else if(objectMostNear === venus) {
-		    	console.log('i am at sponsors');
-		    	performSponsers();
+		    	console.log('i am at Pro night');
+		    	performProNight();
 
 		    } else if(objectMostNear === earth) {
 		    	console.log('i am at registration');
@@ -166,7 +166,25 @@ function performEvents() {
 	
 	
 }
+	function performProNight() {
 
+		setTimeout(function() {
+		    console.log("hello");
+		    // $(".modal-header p").text("Sponsors");
+		    
+		    proNightModal.style.display = "block";
+		}, 1000);
+		// When the user clicks on <span> (x), close the modal
+		$('#spanProNightModal').click(function() {
+		    proNightModal.style.display = "none";
+		});
+
+		$('#textDiv').click(function() {
+		    console.log("hello");
+		    proNightModal.style.display = "block";
+		});
+
+	}
 
 	function performSponsers() {
 
@@ -209,6 +227,11 @@ function performEvents() {
 		// When the user clicks on <span> (x), close the modal
 		$('#spanRegisterModal').click(function() {
 		    registerModal.style.display = "none";
+		});
+
+		$('#textDiv').click(function() {
+		    console.log("hello");
+		    registerModal.style.display = "block";
 		});
 
 

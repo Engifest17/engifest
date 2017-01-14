@@ -22,7 +22,7 @@ function showText(cameraPosition) {
     textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("venus");
-    textDiv.innerHTML = "S&nbsp;&nbsp;P&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;S";
+    textDiv.innerHTML = "P&nbsp;&nbsp;R&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T";
   } else if( cameraPosition.x > (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("earth");
     textDiv.innerHTML = "R&nbsp;&nbsp;E&nbsp;&nbsp;G&nbsp;&nbsp;I&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N";
@@ -44,12 +44,20 @@ function showText(cameraPosition) {
 // });
 
 //MODAL
+
+var proNightModal = document.getElementById('proNightModal');
+// When the user clicks on <span> (x), close the modal
+$('#spanProNightModal').click(function() {
+    proNightModal.style.display = "none";
+});
+
+
+
 var sponsorModal = document.getElementById('sponsorModal');
-$('#textDiv').click(function() {
+$('#sponsors').click(function() {
     console.log("hello");
     sponsorModal.style.display = "block";
 });
-
 // When the user clicks on <span> (x), close the modal
 $('#spanSponsorModal').click(function() {
     sponsorModal.style.display = "none";
@@ -58,16 +66,10 @@ $('#spanSponsorModal').click(function() {
 
 
 var registerModal = document.getElementById('registerModal');
-$('#textDiv').click(function() {
-    console.log("hello");
-    registerModal.style.display = "block";
-});
-
 // When the user clicks on <span> (x), close the modal
 $('#spanRegisterModal').click(function() {
     registerModal.style.display = "none";
 });
-
 
 
 
@@ -76,22 +78,24 @@ $('#about').click(function() {
     console.log("hello");
     aboutEngifestModal.style.display = "block";
 });
-
 // When the user clicks on <span> (x), close the modal
 $('#spanAboutEngifestModal').click(function() {
     aboutEngifestModal.style.display = "none";
 });
+
+
 
 var dtuLegacyModal = document.getElementById('dtuLegacyModal');
 $('#legacy').click(function() {
     console.log("hello");
     dtuLegacyModal.style.display = "block";
 });
-
 // When the user clicks on <span> (x), close the modal
 $('#spanDTULegacyModal').click(function() {
     dtuLegacyModal.style.display = "none";
 });
+
+
 
 // Contact Modal
 var contactModal = document.getElementById('contactModal');
