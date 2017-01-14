@@ -46,6 +46,10 @@
 			<source src="assets/sounds/background-ambience.mp3" type="audio/mpeg">
 			<!-- <source src="horse.mp3" type="audio/mpeg"> -->
 		</audio>
+		<script>
+			var vid = document.getElementById("background-ambience");
+			vid.volume = 1;
+		</script>
 
 		<audio id="hover-menu-sound">
 			<source src="assets/sounds/button-hover-mp3.mp3" type="audio/mpeg">
@@ -3024,7 +3028,9 @@
 	                    	<ul class="event-ul nav nav-tabs nav-stacked">
 	                            <li><a data-toggle="tab" href="#shakedown" class="event-list float-nav">Shakedown</a></li>
 	                            <li><a data-toggle="tab" href="#kaleidoscope" class="event-list float-nav">Kaleidoscope</a></li>
-	                            <li><a data-toggle="tab" href="#stand-up-comedy" class="event-list float-nav">Stand-Up Comedy</a></li>	                            
+	                            <li><a data-toggle="tab" href="#arte-fotographia" class="event-list float-nav">Arte Fotographia</a></li>
+	                            <li><a data-toggle="tab" href="#stand-up-comedy" class="event-list float-nav">Stand-Up Comedy</a></li>	
+	                            <li><a data-toggle="tab" href="#kavi-sammelan" class="event-list float-nav">Kavi Sammelan</a></li>                            
 	                        </ul>
 	                    </div>
 	                    <div class="col-xs-9">
@@ -3103,7 +3109,56 @@
 						            </div>
 						        </div>
 
+						        <!-- Arte Fotographia -->
+					            <div id="arte-fotographia" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#arte-fotographiahome">Info</a></li>
+						                <li><a data-toggle="tab" href="#arte-fotographiamenu1">Rules</a></li>
+						                <li><a data-toggle="tab" href="#arte-fotographiamenu2">Contact</a></li>
+						                <button class="btn pull-right" href="http://goo.gl/forms/fZuODXpy9B">Register</button>
+						            </ul>
 
+						            <div class="tab-content">
+						                <div id="arte-fotographiahome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">Kaleidoscope is the official film festival of Engifest, conducted by Parchhayi, The photography and film making society of DTU. Works of art in the form of short films will be showcased and judged by prominent figures in the film industry.
+						                        </div>
+						                        <div class="info-col">
+						                            <b>Date: </b>14 Feb<br>
+						                            <b>Time: </b>12:00 pm<br>
+						                            <b>Venue: </b>Edusat Hall<br>
+						                        </div>
+						                        <div class="info-col"></div>
+						                    </div>
+						                </div>
+						                <div id="arte-fotographiamenu1" class="tab-pane fade">
+						                    <div class="rule-content">
+						                        Team size: At most 15 (including the actors)<br>
+						                        Time Limit: Max 15 minutes<br>
+						                        Theme: No particular theme <br>
+						                        Judging Criteria: Editing, Cinematography, Script, Acting, Sound design and Overall impact.<br>
+						                        1. The movies should be either in Hindi or English or both.<br>
+						                        2. If you choose to make a film in Hindi, it must contain English subtitles. <br>
+						                        3. No other languages will be allowed.<br>
+						                        4. Please note that we will not be responsible for postal delays, losses or damages–make sure you send in entries sufficiently before the deadline.<br>
+						                        5. You may use any video camera you deem suitable for shooting the movie.<br>
+						                        6. However, we strongly discourage low-resolution cameras, including webcams and mobile-phone cameras.<br>
+						                        7. The content of the movie should be appropriate for public screening and thus should have no vulgarity.<br>
+						                        8. Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification.<br>
+						                        9. Entries must be the original work of the entrants and must not infringe third-party's rights.<br>
+						                        10. Please avoid photo slideshows, remixes, spoofs and advertisements.<br>
+						                        11. Plagiarism is strictly prohibited.<br>
+						                        12. Sound track can be borrowed, but with due credit.<br>
+						                    </div>
+						                </div>
+						                <div id="arte-fotographiamenu2" class="tab-pane fade">
+						                    <div class="contact-content">
+						                        <b>Adil Haris </b> +91-7042364785 <br>
+						                        <b>Ayush Goel </b> +91-9999888200 <br>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
 
 						        <!-- Stand-Up Comedy -->
 						        <div id="stand-up-comedy" class="tab-pane fade">
@@ -3131,6 +3186,40 @@
 						                    </div>
 						                </div>
 						                <div id="stand-up-comedymenu2" class="tab-pane fade">
+						                    <div class="contact-content">
+						                        <b>Bhavesh </b> +91-8447587727<br>
+						                        <b>Suyash </b> +91-7838912711<br>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- Kavi Sammelan -->
+						        <div id="kavi-sammelan" class="tab-pane fade">
+						            <ul class="nav nav-tabs">
+						                <li class="active"><a data-toggle="tab" href="#kavi-sammelanhome">Info</a></li>
+						                <!--<li><a data-toggle="tab" href="#menu1">Rules</a></li>-->
+						                <li><a data-toggle="tab" href="#kavi-sammelanmenu2">Contact</a></li>
+						                <button class="btn pull-right" href="http://www.quizzinginc.com/pages/events/event_detail/MTA=/The_Engi_Quiz">Register</button>
+						            </ul>
+
+						            <div class="tab-content">
+						                <div id="kavi-sammelanhome" class="tab-pane fade in active">
+						                    <div class="info-content">
+						                        <div class="info-row">Engifest'16 in association with Quizzing Inc presents "The Engi Quiz".<br>
+												On the very first day of the fest, get your wits sharpened and knowledge replenished for you'll need every bit of your grey cells to crack this nut.<br>
+												A general quiz spread over 9 rounds with two prelims slots to thoroughly test your mental faculties giving you a chance to win awesome prizes including up to 15,000 in cash!
+						                        </div>
+						                        <div class="info-row">
+						                            <b>Date: </b>13 Feb<br>
+						                            <b>Time: </b>12:00 pm<br>
+						                            <b>Venue: </b>Edusat Hall<br>
+						                            <b>Team Size: </b> 2 per team, cross college teams allowed<br>
+						                            <b>Fees: </b>50/- per team<br>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div id="kavi-sammelanmenu2" class="tab-pane fade">
 						                    <div class="contact-content">
 						                        <b>Bhavesh </b> +91-8447587727<br>
 						                        <b>Suyash </b> +91-7838912711<br>
