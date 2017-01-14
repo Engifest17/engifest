@@ -47,16 +47,16 @@
 
 /* The Close Button */
 .close {
-    color: white;
-    float: right;
-    font-weight: bold;
+    color: white !important;
+    float: right !important;
+    font-weight: bold !important; 
 }
 
 .close:hover,
 .close:focus {
-    color: rgba(255,255,255, 0.8);
-    text-decoration: none;
-    cursor: pointer;
+    color: rgba(255,255,255, 0.8) !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
 }
 
 .modal-header {

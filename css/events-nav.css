@@ -114,14 +114,20 @@
     width: 50%;
 }
 
-.btn{
-  font-size: 20px;
-  /*background-color: black;*/
-  border-radius: 0px;
-  padding: 8px;
-  color: white;
+.btn, .btn:active, .btn:visited, .btn:link{
+    font-size: 20px;
+    /*background-color: black;*/
+    border-radius: 0px;
+    padding: 8px;
+    color: white !important;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 .btn:hover {
-  color: #228DFF;
+  color: #a9d3ff !important;
 }

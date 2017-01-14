@@ -22,7 +22,7 @@ function showText(cameraPosition) {
     textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("venus");
-    textDiv.innerHTML = "P&nbsp;&nbsp;R&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T";
+    textDiv.innerHTML = "P&nbsp;&nbsp;R&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;S";
   } else if( cameraPosition.x > (venus.planet.position.x + earth.planet.position.x)/2) {
     // console.log("earth");
     textDiv.innerHTML = "R&nbsp;&nbsp;E&nbsp;&nbsp;G&nbsp;&nbsp;I&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N";
