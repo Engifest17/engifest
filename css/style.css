@@ -129,3 +129,7 @@ body,html {
     to {-moz-transform: scale(1.0) translate(-50%, 0%);}    
 }
 
+.register {
+	text-decoration: none;
+}
+
