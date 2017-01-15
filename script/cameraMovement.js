@@ -40,7 +40,7 @@ $('#registration').click(function() {
 // });
 
 function hideEventsHomeExtras() {
-	$('#events-satellite, #home-design-wrapper').fadeOut(800).css({
+	$('#events-satellite, #home-design-wrapper, #pro-night-wrapper').fadeOut(800).css({
 		"display": "none"
 	});
 }
@@ -50,7 +50,7 @@ function hideEventsHomeExtras() {
 
 function moveCamera(spline, otherSpline = false) {			// spline is the curve and otherSpline is wheather this is the main spline camera rotation or not
     // none display events satellites
-	$('#events-satellite, #home-design-wrapper').fadeOut(800).css({
+	$('#events-satellite, #home-design-wrapper, #pro-night-wrapper').fadeOut(800).css({
 		"display": "none"
 	});
   
@@ -173,6 +173,9 @@ function performEvents() {
 		    // $(".modal-header p").text("Sponsors");
 		    
 		    proNightModal.style.display = "block";
+		    $('#pro-night-wrapper').fadeIn(800).css({
+				"display": "block"
+			});
 		}, 1000);
 		// When the user clicks on <span> (x), close the modal
 		$('#spanProNightModal').click(function() {
