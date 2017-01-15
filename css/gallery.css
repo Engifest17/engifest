@@ -356,14 +356,26 @@ li p {
 }
 
 span {
+  
+}
+#button {
+  color:white;
+  width: 20%;
   z-index: 1000;
   position: absolute;
   left: 50%;
   top: 90%;
   transform: translate(-50%, -50%);
 }
-#button {
-  color:white;
+
+#prev {
+  float: left;
+  cursor: hand;
+}
+
+#next {
+  float: right;
+  cursor: hand;
 }
 
 
