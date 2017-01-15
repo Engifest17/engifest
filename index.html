@@ -28,6 +28,7 @@
 		<link href="css/left-side-menu.css" type="text/css" rel="stylesheet"/>
 		<link href="css/registration-airplane.css" type="text/css" rel="stylesheet"/>
 		<link href="css/pro-night-moonwalk.css" type="text/css" rel="stylesheet"/>
+		<link href="css/mute-button.css" type="text/css" rel="stylesheet"/>
 	</head>
 	<body id="container">
 		
@@ -56,7 +57,7 @@
 		</div> -->
 		<script type="text/javascript" src="script/loader.js"></script>
 		
-		<!-- Canvas  -->
+		<!-- Audio  -->
 		<audio id="background-ambience">
 			<source src="assets/sounds/background-ambience.mp3" type="audio/mpeg">
 			<!-- <source src="horse.mp3" type="audio/mpeg"> -->
@@ -71,7 +72,10 @@
 			<!-- <source src="horse.mp3" type="audio/mpeg"> -->
 		</audio>
 
+		
 
+
+		<!-- Canvas  -->
 		<canvas id="myCanvas"></canvas>
 
 		
@@ -88,31 +92,31 @@
 		                <div style=""></div>
 		                <div class="menu">
 		                  <ul id="menu">
-		                    <!--<li id="#home" class="menu-venue"><a href="javascript:void(0)"><i class="fa fa-home"></i><span>Home</span></a></li>-->
+		                    <!--<li id="#home" class="menu-venue"><a  ><i class="fa fa-home"></i><span>Home</span></a></li>-->
 		                     
-		                    <li><a href="javascript:void(0)"><i class="fa fa-info-circle"></i><span style="position: relative;">About</span><span class="fa fa-angle-left" style="float: right; position: relative;"></span></a>
+		                    <li><a  ><i class="fa fa-info-circle"></i><span style="position: relative;">About</span><span class="fa fa-angle-left" style="float: right; position: relative;"></span></a>
 		                        <ul>
-		                            <li id="about"><a href="javascript:void(0)">About Engifest</a></li>
-		                            <li id="legacy"><a href="javascript:void(0)">DTU: The Legacy</a></li>
+		                            <li id="about"><a  >About Engifest</a></li>
+		                            <li id="legacy"><a  >DTU: The Legacy</a></li>
 		                        </ul>
 		                    </li>
-		                    <li><a href="javascript:void(0)"><i class="fa fa-camera"></i><span style="position: relative;">Glimpses</span><span class="fa fa-angle-left" style="float: right; position: relative;"></a>
+		                    <li><a  ><i class="fa fa-camera"></i><span style="position: relative;">Glimpses</span><span class="fa fa-angle-left" style="float: right; position: relative;"></a>
 		                    	<ul>
 		                            <li id="gallery"><a href="gallery.html" target="_blank"><i class="fa fa-picture-o "></i>Gallery</a></li>
 		                            <li id="after-movie"><a href="https://youtu.be/CIzBQTj1XFc" target="_blank"><i class="fa fa-file-video-o "></i>After Movie'16</a></li>
 		                        </ul>
 		                    </li>                    
 		                    
-		                    <li><a href="javascript:void(0)"><i class="fa fa-share-alt"></i><span style="position: relative;">Social Media</span><span class="fa fa-angle-left" style="float: right; position: relative;"></span></a>
+		                    <li><a  ><i class="fa fa-share-alt"></i><span style="position: relative;">Social Media</span><span class="fa fa-angle-left" style="float: right; position: relative;"></span></a>
 		                      <ul>
 		                        <li><a href="https://www.facebook.com/engifest/" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
 		                        <li><a href="https://www.youtube.com/channel/UCttG9rAcheQ_gAAmRb5CKEg" target="_blank"><i class="fa fa-youtube"></i>Youtube</a></li>
 		                        <li><a href="https://www.instagram.com/engifest_dtu/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></li>
 		                      </ul>
 		                    </li>
-		                    <li id="sponsors"><a href="javascript:void(0)"><i class="fa fa-group"></i><span style="position: relative;">Sponsors</span></a></li>
+		                    <li id="sponsors"><a  ><i class="fa fa-group"></i><span style="position: relative;">Sponsors</span></a></li>
 		                    <li id="engifest-team"><a href="engifest-team/" target="_blank"><i class="fa fa-wrench"></i><span style="position: relative;">Engifest Team</span></a></li>
-		                    <li id="contact-us"><a href="javascript:void(0)"><i class="fa fa-envelope"></i><span>Contact Us</span></a></li>
+		                    <li id="contact-us"><a  ><i class="fa fa-envelope"></i><span>Contact Us</span></a></li>
 		                  </ul>
 		                </div>
 		        </div>
@@ -134,6 +138,14 @@
 			<div id="registration" class="col-xs-2 align-center floath5 lowermenusound">Registration</div>
 		</div>
 		
+		<!-- Mute Button -->
+		<div id="mute-wrapper">
+			<a class="speaker">
+				<span></span>
+			</a>
+		</div>
+
+
 		<!-- MODALS -->
 
 		<!-- Pro Night Modal -->
@@ -5274,5 +5286,6 @@
 		<script src="script/events-satellite.js"></script>
 		<script src="script/bootstrap.min.js"></script>
 		<script src="script/home.js"></script>
+		<script src="script/muteButton.js"></script>
 	</body>
 </html>
