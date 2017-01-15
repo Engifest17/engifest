@@ -54,8 +54,9 @@ $('#satellite-p-8, #satellite-8').click(function() {
 
 
 // When the user clicks on <span> (x), close the modal
-$('#spanProNightModal, #spanModalSatellite1, #spanModalSatellite2, #spanModalSatellite3, #spanModalSatellite4, #spanModalSatellite5, #spanModalSatellite6, #spanModalSatellite7, #spanModalSatellite8').click(function() {
+$('#spanEngifestTeamModal, #spanProNightModal, #spanModalSatellite1, #spanModalSatellite2, #spanModalSatellite3, #spanModalSatellite4, #spanModalSatellite5, #spanModalSatellite6, #spanModalSatellite7, #spanModalSatellite8').click(function() {
 	// console.log('close fired');
+    engifestTeamModal.style.display = "none";
     proNightModal.style.display = "none";
     sponsorModal.style.display = "none";
     contactModal.style.display = "none";
@@ -74,7 +75,8 @@ $('#spanProNightModal, #spanModalSatellite1, #spanModalSatellite2, #spanModalSat
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 	// console.log('window on click fired');
-    if (event.target == proNightModal || event.target == dtuLegacyModal || event.target == aboutEngifestModal || event.target == registerModal ||event.target == sponsorModal || event.target == contactModal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
+    if (event.target == engifestTeamModal || event.target == proNightModal || event.target == dtuLegacyModal || event.target == aboutEngifestModal || event.target == registerModal ||event.target == sponsorModal || event.target == contactModal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
+        engifestTeamModal.style.display = "none";
         dtuLegacyModal.style.display = "none";
         aboutEngifestModal.style.display = "none";
         proNightModal.style.display = "none";
@@ -95,6 +97,7 @@ window.onclick = function(event) {
 
 document.onkeydown = function(event) { 
 	// console.log('onkeydwn fired'); 
+    engifestTeamModal.style.display = "none";
     dtuLegacyModal.style.display = "none";
     aboutEngifestModal.style.display = "none";
     proNightModal.style.display = "none";

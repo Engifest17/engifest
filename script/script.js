@@ -109,6 +109,18 @@ $('#spanContactModal').click(function() {
     contactModal.style.display = "none";
 });
 
+// Engifest Team Modal
+var engifestTeamModal = document.getElementById('engifestTeamModal');
+$('#engifest-team').click(function() {
+    console.log("hello");
+    engifestTeamModal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+$('#spanEngifestTeamModal').click(function() {
+    engifestTeamModal.style.display = "none";
+});
+
 // When the user clicks anywhere outside of the modal, close it
 
 // SATELLITES
