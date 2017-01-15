@@ -1,6 +1,11 @@
 window.onload = function(){
-	var load = document.getElementById("loader");
-	load.style.display = "none";
+	var load = document.getElementById("loader-wrapper");
+	$("#loader-wrapper").fadeOut(800, function() {
+		$(this).css({
+			"display": "none"
+		});
+		$(this).remove();
+	});
 	
 
 
