@@ -110,7 +110,7 @@ header a, a:visited {
 }
 body {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 body,
 /*html { height: 100%;}*/
@@ -160,7 +160,6 @@ body,
 
 #page-content-wrapper {
     width: 100%;
-    padding-top: 70px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -278,26 +277,38 @@ body,
 
 
 #page-content-wrapper {
-  padding-top: 10%;
+  margin: 0 auto;
 }
 /* Carousel */
 
 section {
-  width: 40em;
-  height: 25em;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 }
 
+.carousel {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  /*transform: translate(-50%, -50%);*/
+}
+
 li {
-  width: 500px;
-  height: 281px;
-  background: #333;
+  width: 100%;
+  height: auto;
+  background: Transparent;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   overflow: hidden;
+}
+
+li img {
+  height: 70%;
+  margin: 0 auto;
 }
 
 li p {
@@ -320,7 +331,7 @@ li p {
 
 .left-pos {
   opacity: .3;
-  margin-left: -17em !important;
+  margin-left: -27em !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
@@ -346,10 +357,10 @@ li p {
 
 span {
   z-index: 1000;
-  position: relative;
-  margin: 0 auto;
-  left: 17em;
-  top: 20em;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
 }
 #button {
   color:white;
