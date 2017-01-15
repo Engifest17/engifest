@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Quarca";
+    src: url(../fonts/quarca-norm-thin.otf);
+}
+#loader-text {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F;
+  font-family: "Quarca";
+  font-size: 20px;
+}
 #loader-logo {
   width: 55%;
   height: auto;
