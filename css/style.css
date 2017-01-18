@@ -31,7 +31,7 @@ body,html {
 	color: #ffffff;
 	font-family: "Quarca";
 	text-shadow: 0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F;
-	cursor: hand;
+	cursor: pointer;
 	
 }
 
@@ -48,7 +48,7 @@ body,html {
 }
 
 .cursor-hand {
-	cursor: hand;
+	cursor: pointer;
 }
 
 .lowermenusound:hover {

@@ -9,7 +9,7 @@
 	color: #ffffff;
 	font-family: "Quarca";
 	text-shadow: 0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F;
-	cursor: hand;
+	cursor: pointer;
 }
 #satellite-div-1 {
 	position: absolute;
