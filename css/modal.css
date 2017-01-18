@@ -13,6 +13,14 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     overflow: auto;
 }
+scrollbar { 
+    display: none; 
+    -moz-appearance: none !important;
+}
+scrollbar { 
+    display: none; 
+    -moz-appearance: none !important;
+}
 
 /* Modal Content */
 .modal-content {
