@@ -158,6 +158,12 @@ body,html {
 	text-decoration: none;
 }
 
+.contactRow{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .pro-night-image {
 	width: 90%;
 	height: auto;
