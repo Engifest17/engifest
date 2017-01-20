@@ -168,3 +168,36 @@ body,html {
 	width: 90%;
 	height: auto;
 }
+
+/*-------------------------------*/
+/*       Register-Button         */
+/*-------------------------------*/
+
+.myButton {
+  -moz-box-shadow:inset 0px 0px 1px 0px #91b8b3;
+  -webkit-box-shadow:inset 0px 0px 1px 0px #91b8b3;
+  box-shadow:inset 0px 0px 1px 0px #91b8b3;
+  background-color:transparent;
+  -moz-border-radius:9px;
+  -webkit-border-radius:9px;
+  border-radius:9px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:10px 40px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #2b665e;
+  margin-top: 50px;
+}
+.myButton:hover {
+  background-color:transparent;
+  text-decoration: none;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+  text-decoration: none;
+}
+
