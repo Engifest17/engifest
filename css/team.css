@@ -1,3 +1,8 @@
+body, html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -13,9 +18,20 @@
     margin: 0 !important;
 
 }
+
+.flex-header{
+  color:#ffffff;
+  font-size: 25px;
+  font: roboto;
+}
 .img{
 
-	height:70%;
+	height:40%;
+}
+
+.title-head{
+  color: #ffffff;
+  font-size: 40px;
 }
 
 
@@ -29,7 +45,6 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    overflow: scroll;
     z-index:9999999;
     position:absolute;
     width: 100%;
