@@ -128,6 +128,7 @@ body,html {
 
 .marginLeft {
 	padding-left: 20px;
+	padding-right: 10px;
 }
 
 .scaling{
@@ -189,7 +190,7 @@ body,html {
   padding:10px 40px;
   text-decoration:none;
   text-shadow:0px 0px 0px #2b665e;
-  margin-top: 50px;
+  /*margin-top: 20px;*/
 }
 .myButton:hover {
   background-color:transparent;
@@ -200,4 +201,6 @@ body,html {
   top:1px;
   text-decoration: none;
 }
+
+
 
