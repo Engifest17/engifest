@@ -69,6 +69,7 @@ scrollbar {
 
 .modal-header {
     padding: 2px 16px;
+    margin: 0 !important;
     background-color: #121212;
     border-radius: 10px 10px 0px 0px;
     color: white;
@@ -89,3 +90,6 @@ scrollbar {
     color: white;
 }
 
+.modalHead{
+    margin: 0 !important;
+}
