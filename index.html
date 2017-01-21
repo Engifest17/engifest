@@ -1,5 +1,14 @@
 <html>
 	<head>
+		<script type="text/javascript">
+			console.log("Engifest'17");
+			var maxWidth = 700;
+			var maxHeight = 660;
+			var mobileURL = "http://engifest17.github.io/MobileWebsite";
+			if(window.innerWidth < maxWidth || window.innerHeight < maxHeight) {
+				document.location = mobileURL;
+			}
+		</script>
 		<!-- No cache need to be changed -->
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
