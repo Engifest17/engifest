@@ -55,15 +55,15 @@ $('#spanProNightModal').click(function() {
 
 
 
-var sponsorModal = document.getElementById('sponsorModal');
-$('#sponsors').click(function() {
-    console.log("hello");
-    sponsorModal.style.display = "block";
-});
-// When the user clicks on <span> (x), close the modal
-$('#spanSponsorModal').click(function() {
-    sponsorModal.style.display = "none";
-});
+// var sponsorModal = document.getElementById('sponsorModal');
+// $('#sponsors').click(function() {
+//     console.log("hello");
+//     sponsorModal.style.display = "block";
+// });
+// // When the user clicks on <span> (x), close the modal
+// $('#spanSponsorModal').click(function() {
+//     sponsorModal.style.display = "none";
+// });
 
 
 
