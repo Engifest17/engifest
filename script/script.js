@@ -15,28 +15,28 @@ function showText(cameraPosition) {
 
   var textDiv = document.getElementById('textDiv');
   if(cameraPosition.x <= (sun.planet.position.x + mercury.planet.position.x)/2) {
-    // console.log("sun");
+    // // console.log("sun");
     textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (mercury.planet.position.x + venus.planet.position.x)/2) {
-    // console.log("mercury");
+    // // console.log("mercury");
     textDiv.innerHTML = "";
   } else if( cameraPosition.x <= (venus.planet.position.x + earth.planet.position.x)/2) {
-    // console.log("venus");
+    // // console.log("venus");
     textDiv.innerHTML = "";
     // textDiv.innerHTML = "P&nbsp;&nbsp;R&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;S";
   } else if( cameraPosition.x > (venus.planet.position.x + earth.planet.position.x)/2) {
-    // console.log("earth");
+    // // console.log("earth");
     textDiv.innerHTML = "";
     // textDiv.innerHTML = "R&nbsp;&nbsp;E&nbsp;&nbsp;G&nbsp;&nbsp;I&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N";
   } 
   // else if( cameraPosition.x > (earth.planet.position.x + mars.planet.position.x)/2) {
-  //   // console.log("mars");
+  //   // // console.log("mars");
   //   textDiv.innerHTML = "C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T";
   // }
 }
 
 // document.getElementById('textDiv').addEventListener('click', function() {
-//   console.log("hello");
+//   // console.log("hello");
 // });
 // $('#textDiv').mouseenter(function() {
 //   $(this).addClass('scaling');
@@ -57,7 +57,7 @@ $('#spanProNightModal').click(function() {
 
 // var sponsorModal = document.getElementById('sponsorModal');
 // $('#sponsors').click(function() {
-//     console.log("hello");
+//     // console.log("hello");
 //     sponsorModal.style.display = "block";
 // });
 // // When the user clicks on <span> (x), close the modal
@@ -77,7 +77,7 @@ $('#spanRegisterModal').click(function() {
 
 var aboutEngifestModal = document.getElementById('aboutEngifestModal');
 $('#about').click(function() {
-    console.log("hello");
+    // console.log("hello");
     aboutEngifestModal.style.display = "block";
 });
 // When the user clicks on <span> (x), close the modal
@@ -89,7 +89,7 @@ $('#spanAboutEngifestModal').click(function() {
 
 var dtuLegacyModal = document.getElementById('dtuLegacyModal');
 $('#legacy').click(function() {
-    console.log("hello");
+    // console.log("hello");
     dtuLegacyModal.style.display = "block";
 });
 // When the user clicks on <span> (x), close the modal
@@ -102,7 +102,7 @@ $('#spanDTULegacyModal').click(function() {
 // Contact Modal
 var contactModal = document.getElementById('contactModal');
 $('#contact-us').click(function() {
-    console.log("hello");
+    // console.log("hello");
     contactModal.style.display = "block";
 });
 
@@ -114,7 +114,7 @@ $('#spanContactModal').click(function() {
 // // Engifest Team Modal
 // var engifestTeamModal = document.getElementById('engifestTeamModal');
 // $('#engifest-team').click(function() {
-//     console.log("hello");
+//     // console.log("hello");
 //     engifestTeamModal.style.display = "block";
 // });
 
@@ -129,7 +129,7 @@ $('#spanContactModal').click(function() {
 
 
 // document.addEventListener('keydown', function(e) {
-//   // console.log(e);
+//   // // console.log(e);
 
 
 //   var smoothness = 10;
@@ -140,7 +140,7 @@ $('#spanContactModal').click(function() {
 //   if(e.key === "ArrowRight") {
 //   	e.preventDefault();
 
-//   	// console.log("right");
+//   	// // console.log("right");
 //   	//MOVE CAMERA ALONG SPLINE
 //     function checkSame(index) {
 //       if(camera.position.x == randomPoints[index].x && camera.position.y == randomPoints[index].y && camera.position.z == randomPoints[index].z) {
@@ -170,7 +170,7 @@ $('#spanContactModal').click(function() {
 //         // camPosIndex = 0;
 //         var camPos = spline.getPoint(camPosIndex / unknown);
 //         var camRot = spline.getPoint(camPosIndex / unknown);
-//         // console.log("right2");
+//         // // console.log("right2");
 //         camera.position.x = camPos.x;
 //         camera.position.y = camPos.y;
 //         camera.position.z = camPos.z;
@@ -195,14 +195,14 @@ $('#spanContactModal').click(function() {
 //     }
 //   } else if (e.key === "ArrowLeft") {
 //   	e.preventDefault();
-//   	// console.log("left");
+//   	// // console.log("left");
 //   	//MOVE CAMERA ALONG SPLINE
 //     camPosIndex-=smoothness;
 //     if (camPosIndex < unknown && camPosIndex > 0) {
 //       // camPosIndex = 0;
 //       var camPos = spline.getPoint(camPosIndex / unknown);
 //       var camRot = spline.getTangent(camPosIndex / unknown);
-//       // console.log("right2");
+//       // // console.log("right2");
 //       camera.position.x = camPos.x;
 //       camera.position.y = camPos.y;
 //       camera.position.z = camPos.z;
@@ -220,5 +220,5 @@ $('#spanContactModal').click(function() {
 //   	// saturn.position.x -= 2;
 //   	camera.updateProjectionMatrix();
 //   }
-//   // console.log(e);
+//   // // console.log(e);
 // });

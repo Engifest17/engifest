@@ -1,7 +1,7 @@
 $('#home').click(function() {
 	var newSpline = new Spline();
 	hideEventsHomeExtras();
-	console.log("home");
+	// console.log("home");
 	newSpline.makeSplinePoints(camera, sun);
 	moveCamera(newSpline.curve);
 });
@@ -9,7 +9,7 @@ $('#home').click(function() {
 $('#events').click(function() {
 	var newSpline = new Spline();
 	hideEventsHomeExtras();
-	console.log("events");
+	// console.log("events");
 	newSpline.makeSplinePoints(camera, mercury);
 	moveCamera(newSpline.curve);
 });
@@ -18,7 +18,7 @@ $('#events').click(function() {
 $('#pro-night').click(function() {
 	var newSpline = new Spline();
 	hideEventsHomeExtras();
-	console.log("pro night");
+	// console.log("pro night");
 	newSpline.makeSplinePoints(camera, venus);
 	moveCamera(newSpline.curve);
 });
@@ -26,7 +26,7 @@ $('#pro-night').click(function() {
 $('#registration').click(function() {
 	var newSpline = new Spline();
 	hideEventsHomeExtras();
-	console.log("registration");
+	// console.log("registration");
 	newSpline.makeSplinePoints(camera, earth);
 	moveCamera(newSpline.curve);
 });
@@ -34,7 +34,7 @@ $('#registration').click(function() {
 // $('#contact').click(function() {
 // 	var newSpline = new Spline();
 // 	hideEventsHomeExtras();
-// 	console.log("contact");
+// 	// console.log("contact");
 // 	newSpline.makeSplinePoints(camera, mars);
 // 	moveCamera(newSpline.curve);
 // });
@@ -69,7 +69,7 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 	  } else {
 	    camPosIndex = unknown - smoothness;
 	    clearInterval(newInterval);
-	    // console.log(camera.position.x, sun.planet.position.x);
+	    // // console.log(camera.position.x, sun.planet.position.x);
 	    
 	    if(otherSpline == false) {
 	    	function nearness(camera) {
@@ -101,22 +101,22 @@ function moveCamera(spline, otherSpline = false) {			// spline is the curve and 
 
 		    var objectMostNear = nearness(camera);
 		    if(objectMostNear === sun) {
-		    	console.log('i am at home');
+		    	// console.log('i am at home');
 		    	performHome();
 		    } else if(objectMostNear === mercury) {
-		    	console.log('i am at events');
+		    	// console.log('i am at events');
 		    	performEvents();
 		    } else if(objectMostNear === venus) {
-		    	console.log('i am at Pro night');
+		    	// console.log('i am at Pro night');
 		    	performProNight();
 
 		    } else if(objectMostNear === earth) {
-		    	console.log('i am at registration');
+		    	// console.log('i am at registration');
 		    	performRegister();
 
 		    } 
 		    // else if(objectMostNear === mars) {
-		    // 	console.log('i am at contact');
+		    // 	// console.log('i am at contact');
 		    // 	performContact();
 		    // }
 		}	// otherSpline if condition ended
@@ -144,7 +144,7 @@ function performEvents() {
 	var newSpline = new Spline();
 	newSpline.makeSplineFromPoints(newPoints);
 	moveCamera(newSpline.curve, true);
-	// console.log(newPoints[1]);
+	// // console.log(newPoints[1]);
 	setTimeout(function() {
 		$('#events-satellite').fadeIn(800).css({
 			"display": "block"
@@ -154,7 +154,7 @@ function performEvents() {
 	// $("p[id^='satellite-p']").each(function(i, el) {
 	// 	$(this).mouseenter(function(){
 	// 		$(this).addClass('float');
-	// 		// console.log(this);
+	// 		// // console.log(this);
 	// 	});
 	// 	$(this).mouseleave(function(){
 	// 		var no = $(this).attr('id').split('-');
@@ -169,7 +169,7 @@ function performEvents() {
 	function performProNight() {
 
 		setTimeout(function() {
-		    console.log("hello");
+		    // console.log("hello");
 		    // $(".modal-header p").text("Sponsors");
 		    
 		    proNightModal.style.display = "block";
@@ -183,7 +183,7 @@ function performEvents() {
 		});
 
 		$('#textDiv').click(function() {
-		    console.log("hello");
+		    // console.log("hello");
 		    proNightModal.style.display = "block";
 		});
 
@@ -192,7 +192,7 @@ function performEvents() {
 	function performSponsers() {
 
 		setTimeout(function() {
-		    console.log("hello");
+		    // console.log("hello");
 		    // $(".modal-header p").text("Sponsors");
 		    
 		    sponsorModal.style.display = "block";
@@ -207,7 +207,7 @@ function performEvents() {
 	function performContact() {
 		
 		setTimeout(function() {
-		    console.log("hello");
+		    // console.log("hello");
 		    // $(".modal-header p").text("Sponsors");
 		    
 		    contactModal.style.display = "block";
@@ -222,7 +222,7 @@ function performEvents() {
 	function performRegister() {
 		
 		setTimeout(function() {
-		    console.log("hello");
+		    // console.log("hello");
 		    // $(".modal-header p").text("Sponsors");
 		    
 		   registerModal.style.display = "block";
@@ -233,7 +233,7 @@ function performEvents() {
 		});
 
 		$('#textDiv').click(function() {
-		    console.log("hello");
+		    // console.log("hello");
 		    registerModal.style.display = "block";
 		});
 
@@ -254,7 +254,7 @@ function performEvents() {
 // 	  } else {
 // 	    camPosIndex = unknown - smoothness;
 // 	    clearInterval(newInterval);
-// 	    console.log('done');
+// 	    // console.log('done');
 // 	  }
 // 	  camera.updateProjectionMatrix();
 //   }, 20);
