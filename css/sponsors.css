@@ -201,3 +201,15 @@ header a, a:visited {
   -webkit-animation:move-clouds-back 200s linear infinite;
   animation:move-clouds-back 200s linear infinite;
 }
+
+.sponsor-image img{
+    height: 100px;
+    /*width: auto;*/
+    max-width: 282px;
+}
+.sponsor-type {
+    font-size: 20px;
+}
+.sponsorInfo{
+  overflow: auto !important;
+}
