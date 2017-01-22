@@ -164,10 +164,13 @@ body,html {
   margin-bottom: 50px;
   text-align: center;
 }
+#pro-night-div {
+  overflow: hidden;
+  display: flex;
+}
 
 .pro-night-image {
-	width: 90%;
-	height: auto;
+  width: 80%;
 }
 
 /*-------------------------------*/
