@@ -1,0 +1,146 @@
+/*-------------------------------*/
+/*         Body Content          */
+/*-------------------------------*/
+
+.main-body{
+  z-index: 999;
+  position: relative;
+}
+
+#logo{
+  z-index: 999;
+  width: 80%;
+  height: auto;
+  max-width: 505px;
+  max-height: auto;
+  display: block;
+}
+
+#home-body{
+  position : relative;
+  margin-top: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 40px;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.left{
+  text-align: left;
+}
+
+/*-------------------------------*/
+/*       Register-Button         */
+/*-------------------------------*/
+
+.myButton {
+  -moz-box-shadow:inset 0px 0px 1px 0px #91b8b3;
+  -webkit-box-shadow:inset 0px 0px 1px 0px #91b8b3;
+  box-shadow:inset 0px 0px 1px 0px #91b8b3;
+  background-color:transparent;
+  -moz-border-radius:9px;
+  -webkit-border-radius:9px;
+  border-radius:9px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:10px 40px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #2b665e;
+  margin-top: 50px;
+}
+.myButton:hover {
+  background-color:transparent;
+  text-decoration: none;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+  text-decoration: none;
+}
+
+
+/*-------------------------------*/
+/*          Events-List          */
+/*-------------------------------*/
+
+#events-heading{
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.event-list{
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.event-list li{
+  list-style-type: none;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.event-list li a{
+  text-decoration: none;
+  color: #ffffff
+}
+
+.event-list li a:hover{
+  text-decoration: none;
+  color: #ffffff
+}
+
+.event-list li a:visited{
+  text-decoration: none;
+  color: #ffffff
+}
+
+.event-list li a:active{
+  text-decoration: none;
+  color: #ffffff
+}
+
+#event-desc{
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#last-list-item{
+  margin-top: 40px;
+}
+
+/*-------------------------------*/
+/*         Ordered-List          */
+/*-------------------------------*/
+
+.list-heading{
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.event-list-order{
+  list-style-type: decimal;
+}
+
+.event-list-order li{
+  list-style-type: decimal;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.click-here{
+  display: inline-block;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px !important ;
+  font-size: 22px;
+}
