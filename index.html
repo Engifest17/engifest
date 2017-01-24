@@ -1,5 +1,7 @@
 <html>
 	<head>
+
+		<!-- Redirection Script -->
 		<script type="text/javascript">
 			console.log("%cEngifest'17", "background: white; color: black; font-size: x-large");
 			console.log("  -Developed using Three.js, a WebGL library.");
@@ -61,21 +63,18 @@
 			if(Detector.webgl != true){
 				document.location = mobileURL;
 				console.log("WebGL not supported");
-			}else{
-				// console.log("WebGL supported");
 			}
 		</script>
-		<!-- No cache need to be changed -->
-		<!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" /> -->
+
+		<!-- Meta Information ,Title and Favicon -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta itemprop="name" content="Engifest &middot; Endless Energetic Enigmatic">
         <meta itemprop="description" content="Engifest 2017">
-		
 		<title>Engifest'17</title>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/main/engi-small.ico" />
-		<!-- Css Needed -->
+
+
+		<!-- Cascading Style Sheets -->
 		<link href="css/loader.css" type="text/css" rel="stylesheet"/>
 		<link href="css/events-satellite.css" type="text/css" rel="stylesheet"/>
 		<link href="css/modal.css" type="text/css" rel="stylesheet"/>
@@ -94,6 +93,8 @@
 		<link href="css/registration-airplane.css" type="text/css" rel="stylesheet"/>
 		<link href="css/pro-night-moonwalk.css" type="text/css" rel="stylesheet"/>
 		<link href="css/mute-button.css" type="text/css" rel="stylesheet"/>
+		
+		<!-- Google Analytics -->
 		<script>
 	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -102,6 +103,7 @@
 	        ga('create', 'UA-90634485-1', 'auto');
 	        ga('send', 'pageview');
 	    </script>
+
 	</head>
 	<body id="container">
 		
@@ -123,43 +125,27 @@
 				Turn up the Volume
 			</div>
 		</div>
-		<!-- <div id="loader">
-			<svg width="300px" height="200px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet" style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
-			 <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-			        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-			<path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-			        d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-			</svg>
-		</div> -->
 		<script type="text/javascript" src="script/loader.js"></script>
 		
 		<!-- Audio  -->
 		<audio id="background-ambience">
 			<source src="assets/sounds/background-ambience.mp3" type="audio/mpeg">
-			<!-- <source src="horse.mp3" type="audio/mpeg"> -->
 		</audio>
 		<script>
 			var vid = document.getElementById("background-ambience");
 			vid.volume = 1;
 		</script>
-
 		<audio id="hover-menu-sound">
 			<source src="assets/sounds/button-hover-mp3.mp3" type="audio/mpeg">
 			<!-- <source src="horse.mp3" type="audio/mpeg"> -->
 		</audio>
 
-		
-
-
 		<!-- Canvas  -->
 		<canvas id="myCanvas"></canvas>
-
-		
 
 		<!-- Top Heading -->
 		<div id="textDiv" class="float" style="z-index: 200;"></div>
 		
-
 		<!-- Sidebar -->
 		<div id="sidebar-container" style="z-index: 200;">
 	        <div class="page-container sidebar-collapsed">
@@ -167,9 +153,7 @@
 		                
 		                <div style=""></div>
 		                <div class="menu">
-		                  <ul id="menu">
-		                    <!--<li id="#home" class="menu-venue"><a  ><i class="fa fa-home"></i><span>Home</span></a></li>-->
-		                     
+		                  <ul id="menu">		                     
 		                    <li><a  ><i class="fa fa-info-circle"></i><span style="position: relative;">About</span><span class="fa fa-angle-left" style="float: right; position: relative;"></span></a>
 		                        <ul>
 		                            <li id="about"><a  >About Engifest</a></li>
@@ -199,7 +183,7 @@
 	        </div>
         </div>
 
-        <!-- Accomodation div for future -->
+        <!-- Accomodation Div -->
 		<div id="accomodationDiv" class="float-acc lowermenusound" >
 			<a class="no-decoration" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfDE9DQu8k-7vUop34rlmCDzLWTV5Xiyb2fmGZpfbPCr3YKKQ/viewform">Accomodation
 			</a>
@@ -257,11 +241,6 @@
 		      <center><p class="modalHead">Sponsors</p></center>
 		    </div>
 		    <div class="modal-body modal-footer">
-		      <!-- <div class="row">
-                        <div class="sponsor-type"><center>Title Sponsor</center></div>
-                        <div class="sponsor-image"><center><img src="assets/sponsors/pepsi.png"></center>
-                        </div>
-               </div> -->
                <div class="row">
                		<div class="col-xs-3 col-xs-offset-2">
                         <div class="sponsor-type"><center>Associate Sponsor</center></div>
@@ -329,9 +308,6 @@
 
 		    </div>
 
-		    <!-- <div class="modal-footer">
-		      <p>Modal Footer</p>
-		    </div> -->
 		  </div>
 		</div>
 
@@ -485,9 +461,6 @@
 		    </div>
 		    <div class="modal-body modal-footer">
 		      <div class="row">
-                        <!-- <div class="sponsor-type"><center>Title Sponsor</center></div>
-                        <div class="sponsor-image"><center><img src="assets/sponsors/pepsi.png"></center>
-                        </div> -->
                 </div>
 		    </div>
 		    <!-- <div class="modal-footer">
@@ -504,21 +477,9 @@
 		<!-- Home Design -->
 		<div id = "home-design-wrapper">
 			<div id="left-side-menu">
-				<!-- <div class="title-sponsor-logo">
-		            <img src="assets/sponsors/pepsi.png">
-		            <div id="sponsor-text">presents</div>
-		        </div> -->
-		        <!-- <div class="powered-logo">
-		            <div id="powered-text">Powered by</div>
-		            <img src="assets/main/9xm_logo.jpg">
-		            <img src="assets/main/9xo_inverted.png">
-		        </div> -->
 		        <div class="main-logo">
 		            <img src="assets/main/Engi_logo.png" id="main-logo">
 		        </div>
-		        <!-- <div class="vs-cover">
-		            <a href="events/livewire/index.html" target="_blank"><img src="assets/main/vs-cover.jpg"></a>
-		        </div> -->
 		        <div class="dates">
 		            18th - 20th Feb 2017
 		        </div>
@@ -5470,28 +5431,16 @@
 			  </div>
 			</div>
 
-
-
-
-
 		<!-- Script Needed -->
 		<script src="script/three.js"></script>
-		<!-- <script src="script/OrbitControls.js"></script> -->
-		<!-- <script src="script/DatGuiMin.js"></script> -->
 		<script src="script/jquery.js"></script>
 		<script src="script/jquery-ui.min.js"></script>
-		
 		<script src="script/script.js"></script>
-		<!-- <script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script> -->
-		<!-- <script src="http://threejs.org/examples/js/loaders/MTLLoader.js"></script> -->
-		<!-- <script src="http://threejs.org/examples/js/loaders/OBJMTLLoader.js"></script> -->
 		<script src="script/helper.js"></script>
-		<!-- <script src="script/particle.js"></script> -->
 		<script src="script/menu.js"></script>		
 		<script src="script/spline.js"></script>
 		<script src="script/saturn.js"></script>
 		<script src="script/star.js"></script>
-		<!-- <script src="script/mouse.js"></script> -->
 		<script src="script/run.js"></script>
 		<script src="script/cameraMovement.js"></script>
 		<script src="script/events-satellite.js"></script>
