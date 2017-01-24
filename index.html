@@ -2,7 +2,6 @@
 	<head>
 		<script type="text/javascript">
 			console.log("%cEngifest'17", "background: white; color: black; font-size: x-large");
-			console.log("%c -Developed at Home Labs", "background: white; color: black; font-size: large");
 			console.log("  -Developed using Three.js");
 			console.log("%c>> Developers", "background: white; color: black; font-size: small");
 			console.log("%c----> BHASKAR GOYAL", "background: white; color: black; font-size: small");
@@ -10,7 +9,7 @@
 			console.log("%c----> ADITYA VERMA", "background: white; color: black; font-size: small");
 			var maxWidth = 700;
 			var maxHeight = 660;
-			var mobileURL = "http://engifest17.github.io/MobileWebsite";
+			var mobileURL = window.location.hostname+"/MobileWebsite";
 			if(screen.width < maxWidth || screen.height < maxHeight || screen.height > screen.width ) {
 				document.location = mobileURL;
 			}
