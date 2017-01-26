@@ -10,6 +10,7 @@
 	font-family: "Quarca";
 	text-shadow: 0 0 0.4em #87F, 0 0 0.4em #87F, 0 0 0.4em #87F;
 	cursor: pointer;
+    position: absolute;
 }
 #satellite-div-1 {
 	position: absolute;
@@ -19,6 +20,7 @@
 
 #satellite-1 {
 	width: 16%;
+    cursor: pointer;
 }
 
 
@@ -26,19 +28,31 @@
 #satellite-div-2 {
 	position: absolute;
 	top: 13%;
-	left: 25%;
+	left: 22%;
 }
 #satellite-2 {
 	width: 16%;
+    cursor: pointer;
+}
+
+#satellite-div-2a {
+    position: absolute;
+    top: 10%;
+    left: 32%;
+}
+#satellite-2a {
+    width: 16%;
+    cursor: pointer;
 }
 
 #satellite-div-3 {
 	position: absolute;
 	top: 12%;
-	left: 40%;
+	left: 43%;
 }
 #satellite-3 {
 	width: 16%;
+    cursor: pointer;
 }
 
 #satellite-div-4 {
@@ -48,6 +62,7 @@
 }
 #satellite-4 {
 	width: 16%;
+    cursor: pointer;
 }
 
 #satellite-div-5 {
@@ -57,6 +72,7 @@
 }
 #satellite-5 {
 	width: 16%;
+    cursor: pointer;
 }
 
 #satellite-div-6 {
@@ -66,6 +82,7 @@
 }
 #satellite-6 {
 	width: 22%;
+    cursor: pointer;
 }
 
 #satellite-div-7 {
@@ -75,6 +92,7 @@
 }
 #satellite-7 {
 	width: 25%;
+    cursor: pointer;
 }
 
 #satellite-div-8 {
@@ -84,6 +102,7 @@
 }
 #satellite-8 {
 	width: 40%;
+    cursor: pointer;
 }
 
 
@@ -154,6 +173,28 @@
     from {-moz-transform:translate(-50%, 0%) rotate(-60deg);}
     50% {-moz-transform:translate(-50%, 20%) rotate(-80deg);}
     to {-moz-transform: translate(-50%, 0%) rotate(-60deg);    }    
+}
+
+.float-satellite2a {
+    -webkit-animation-name: Floatingxs2a;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatings2a;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingxs2a{
+    from {-webkit-transform:translate(-50%, 0%) rotate(-40deg);}
+    50% {-webkit-transform:translate(-50%, 20%) rotate(-60deg);}
+    to {-webkit-transform: translate(-50%, 0%) rotate(-40deg);    }    
+}
+    
+@-moz-keyframes Floatings2a{
+    from {-moz-transform:translate(-50%, 0%) rotate(-40deg);}
+    50% {-moz-transform:translate(-50%, 20%) rotate(-60deg);}
+    to {-moz-transform: translate(-50%, 0%) rotate(-40deg);    }    
 }
 
 .float-satellite3 {

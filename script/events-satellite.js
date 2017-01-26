@@ -4,6 +4,7 @@
 
 var satelliteModal1 = document.getElementById('satellite-modal-1');
 var satelliteModal2 = document.getElementById('satellite-modal-2');
+var satelliteModal2a = document.getElementById('satellite-modal-2a');
 var satelliteModal3 = document.getElementById('satellite-modal-3');
 var satelliteModal4 = document.getElementById('satellite-modal-4');
 var satelliteModal5 = document.getElementById('satellite-modal-5');
@@ -20,6 +21,11 @@ $('#satellite-p-1, #satellite-1').click(function() {
 $('#satellite-p-2, #satellite-2').click(function() {
     // // console.log("in satelliteModal2");
     satelliteModal2.style.display = "block";
+});
+
+$('#satellite-p-2a, #satellite-2a').click(function() {
+    // // console.log("in satelliteModal2");
+    satelliteModal2a.style.display = "block";
 });
 
 $('#satellite-p-3, #satellite-3').click(function() {
@@ -54,7 +60,7 @@ $('#satellite-p-8, #satellite-8').click(function() {
 
 
 // When the user clicks on <span> (x), close the modal
-$('#spanEngifestTeamModal, #spanProNightModal, #spanModalSatellite1, #spanModalSatellite2, #spanModalSatellite3, #spanModalSatellite4, #spanModalSatellite5, #spanModalSatellite6, #spanModalSatellite7, #spanModalSatellite8').click(function() {
+$('#spanEngifestTeamModal, #spanProNightModal, #spanModalSatellite1, #spanModalSatellite2, #spanModalSatellite2a, #spanModalSatellite3, #spanModalSatellite4, #spanModalSatellite5, #spanModalSatellite6, #spanModalSatellite7, #spanModalSatellite8').click(function() {
 	// // console.log('close fired');
     engifestTeamModal.style.display = "none";
     proNightModal.style.display = "none";
@@ -63,6 +69,7 @@ $('#spanEngifestTeamModal, #spanProNightModal, #spanModalSatellite1, #spanModalS
     registerModal.style.display = "none";
     satelliteModal1.style.display = "none";
     satelliteModal2.style.display = "none";
+    satelliteModal2a.style.display = "none";
     satelliteModal3.style.display = "none";
     satelliteModal4.style.display = "none";
     satelliteModal5.style.display = "none";
@@ -75,7 +82,7 @@ $('#spanEngifestTeamModal, #spanProNightModal, #spanModalSatellite1, #spanModalS
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 	// // console.log('window on click fired');
-    if (event.target == engifestTeamModal || event.target == proNightModal || event.target == dtuLegacyModal || event.target == aboutEngifestModal || event.target == registerModal ||event.target == sponsorModal || event.target == contactModal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
+    if (event.target == engifestTeamModal || event.target == proNightModal || event.target == dtuLegacyModal || event.target == aboutEngifestModal || event.target == registerModal ||event.target == sponsorModal || event.target == contactModal || event.target == satelliteModal1 || event.target == satelliteModal2 || event.target == satelliteModal2a || event.target == satelliteModal3 || event.target == satelliteModal4 || event.target == satelliteModal5 || event.target == satelliteModal6 || event.target == satelliteModal7 || event.target == satelliteModal8) {
         engifestTeamModal.style.display = "none";
         dtuLegacyModal.style.display = "none";
         aboutEngifestModal.style.display = "none";
@@ -85,6 +92,7 @@ window.onclick = function(event) {
         registerModal.style.display = "none";
         satelliteModal1.style.display = "none";
         satelliteModal2.style.display = "none";
+        satelliteModal2a.style.display = "none";
         satelliteModal3.style.display = "none";
         satelliteModal4.style.display = "none";
         satelliteModal5.style.display = "none";
@@ -105,7 +113,8 @@ document.onkeydown = function(event) {
     contactModal.style.display = "none";
     registerModal.style.display = "none";
 	satelliteModal1.style.display = "none";
-	satelliteModal2.style.display = "none";
+    satelliteModal2.style.display = "none";
+	satelliteModal2a.style.display = "none";
 	satelliteModal3.style.display = "none";
 	satelliteModal4.style.display = "none";
 	satelliteModal5.style.display = "none";
