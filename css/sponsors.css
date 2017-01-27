@@ -213,3 +213,6 @@ header a, a:visited {
 .sponsorInfo{
   overflow: auto !important;
 }
+.green{
+  height:150px !important;
+}
