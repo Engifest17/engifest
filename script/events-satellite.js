@@ -104,22 +104,25 @@ window.onclick = function(event) {
 
 
 document.onkeydown = function(event) { 
-	// // console.log('onkeydwn fired'); 
-    engifestTeamModal.style.display = "none";
-    dtuLegacyModal.style.display = "none";
-    aboutEngifestModal.style.display = "none";
-    proNightModal.style.display = "none";
-	sponsorModal.style.display = "none";
-    contactModal.style.display = "none";
-    registerModal.style.display = "none";
-	satelliteModal1.style.display = "none";
-    satelliteModal2.style.display = "none";
-	satelliteModal2a.style.display = "none";
-	satelliteModal3.style.display = "none";
-	satelliteModal4.style.display = "none";
-	satelliteModal5.style.display = "none";
-	satelliteModal6.style.display = "none";
-	satelliteModal7.style.display = "none";
-	satelliteModal8.style.display = "none";
+	// // console.log('onkeydwn fired');
+    if(event['key'] == "Escape") {
+        engifestTeamModal.style.display = "none";
+        dtuLegacyModal.style.display = "none";
+        aboutEngifestModal.style.display = "none";
+        proNightModal.style.display = "none";
+        sponsorModal.style.display = "none";
+        contactModal.style.display = "none";
+        registerModal.style.display = "none";
+        satelliteModal1.style.display = "none";
+        satelliteModal2.style.display = "none";
+        satelliteModal2a.style.display = "none";
+        satelliteModal3.style.display = "none";
+        satelliteModal4.style.display = "none";
+        satelliteModal5.style.display = "none";
+        satelliteModal6.style.display = "none";
+        satelliteModal7.style.display = "none";
+        satelliteModal8.style.display = "none";    
+    } 
+
 }
 
